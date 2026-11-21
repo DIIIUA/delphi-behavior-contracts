@@ -153,7 +153,7 @@ latest pass (`research/COMPILER_PASS_150.md`).
   diagnostics, outputs). Local machine paths in receipts are replaced by neutral
   placeholders such as `<user>`, `<workspace>`, `<RADSTUDIO>` and `<PUBLIC_STUDIO>`;
   nothing else was changed. Two Android output-control project files and the 1.3
-  receipt keep the output folder `D:\Delphi MCP\verification_130`: those project files
+  receipt keep the output folder `<ide-bridge>\verification_130`: those project files
   are bound to the receipt by SHA-256, so they are shipped byte for byte. The folder
   name identifies the IDE bridge used for the builds, not a person.
 - Example and probe sources with their IDE project files: `examples/`, byte for byte as
