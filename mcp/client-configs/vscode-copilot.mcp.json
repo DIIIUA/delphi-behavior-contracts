@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "delphi-behavior-contracts-mcp": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "<SUITE_PATH>/mcp/local-mcp/server.py"
+      ]
+    },
+    "delphi-behavior-contracts-cloud": {
+      "type": "http",
+      "url": "https://delphi-behavior-contracts-mcp.<your-subdomain>.workers.dev/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:DELPHI_MCP_KEY}"
+      }
+    }
+  }
+}

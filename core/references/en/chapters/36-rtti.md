@@ -1,0 +1,31 @@
+# 36. RTTI, attributes, and runtime reflection
+
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+
+This chapter is **included in full in the paid edition** (`1,064` words, `124` lines).
+
+## Sections covered in the full chapter
+
+- Two historical layers: classic (`{$M+}`) and extended (`{$RTTI}`) RTTI
+- The `TypeInfo(T)` operator and the prohibition for sparse enumerations (`E2134`)
+- Custom attributes (`TCustomAttribute`) and the treachery of `W1074`
+- Dynamic invocation through `TRttiMethod.Invoke` and `TValue`
+- A self-contained example (`program ... end.`)
+- Version boundaries and primary sources
+
+## Indexed topics
+
+- `classic and extended RTTI`
+- `TypeInfo TValue`
+- `RTTI directive`
+- `custom attributes`
+- `metadata consumption`
+- `dynamic invocation`
+
+## Want to evaluate real depth right now?
+
+Read the 6 multi-difficulty demo excerpts included in this package:
+- Level 1 (Basic trap): [10-arrays.md](10-arrays.md)
+- Level 2 (Intermediate): [13-managed-records.md](13-managed-records.md)
+- Level 3 (Advanced): [31-generics.md](31-generics.md) and [41-directives.md](41-directives.md)
+- Level 4 (Hardcore ABI & Evolution): [70-floating-profiles.md](70-floating-profiles.md) and [73-evolution-old-to-new.md](73-evolution-old-to-new.md)

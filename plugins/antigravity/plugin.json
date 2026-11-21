@@ -1,0 +1,17 @@
+{
+  "name": "delphi-behavior-contracts",
+  "displayName": "Delphi Behavior Contracts (DEMO)",
+  "version": "1.0.0-demo",
+  "description": "[DEMO] Compiler-measured Delphi / Object Pascal language reference (74 chapters, 89 directive cards, EN & RU), 5 specialist skills, and Code Mode MCP server.",
+  "author": {
+    "name": "Anton Fishman",
+    "url": "https://silentfish.dev/delphi"
+  },
+  "homepage": "https://silentfish.dev/delphi",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Audit this Delphi unit for ownership, lifetime, aliasing and exception bugs",
+    "Port this Delphi function to C# while preserving exact runtime semantics",
+    "Explain the effective compiler directives and Win32 vs Win64 ABI traps in this project"
+  ]
+}

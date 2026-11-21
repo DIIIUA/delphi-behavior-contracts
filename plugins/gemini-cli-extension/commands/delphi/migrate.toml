@@ -1,0 +1,4 @@
+description = "Port Delphi logic to another language"
+prompt = """
+Load skill `delphi-migration`. Extract the full behavior contract before proposing target-language code for: {{args}}
+"""

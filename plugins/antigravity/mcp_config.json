@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "delphi-behavior-contracts-mcp": {
+      "command": "python",
+      "args": [
+        "<SUITE_PATH>/mcp/local-mcp/server.py"
+      ]
+    }
+  }
+}

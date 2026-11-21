@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "delphi-behavior-contracts-mcp": {
+      "command": "python",
+      "args": [
+        "<SUITE_PATH>/mcp/local-mcp/server.py"
+      ]
+    },
+    "delphi-behavior-contracts-cloud": {
+      "serverUrl": "https://delphi-behavior-contracts-mcp.<your-subdomain>.workers.dev/mcp",
+      "headers": {
+        "Authorization": "Bearer ${DELPHI_MCP_KEY}"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+description = "Explain or configure Delphi compiler directives"
+prompt = """
+Load skill `delphi-directives`. Verify directive scope, target behavior and build profile for: {{args}}
+"""

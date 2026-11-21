@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "delphi-behavior-contracts-mcp": {
+      "command": "python",
+      "args": [
+        "<SUITE_PATH>/mcp/local-mcp/server.py"
+      ],
+      "alwaysAllow": [
+        "delphi_search",
+        "delphi_read",
+        "delphi_skill",
+        "delphi_execute"
+      ],
+      "disabled": false
+    }
+  }
+}

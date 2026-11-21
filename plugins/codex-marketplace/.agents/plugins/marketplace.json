@@ -1,0 +1,20 @@
+{
+  "name": "delphi-behavior-contracts-local",
+  "interface": {
+    "displayName": "Delphi Behavior Contracts (DEMO)"
+  },
+  "plugins": [
+    {
+      "name": "delphi-behavior-contracts",
+      "source": {
+        "source": "local",
+        "path": "./plugins/delphi-behavior-contracts"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

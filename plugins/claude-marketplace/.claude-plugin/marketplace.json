@@ -1,0 +1,13 @@
+{
+  "name": "delphi-behavior-contracts",
+  "owner": {
+    "name": "Anton Fishman"
+  },
+  "plugins": [
+    {
+      "name": "delphi-behavior-contracts",
+      "source": "./plugins/delphi-behavior-contracts",
+      "description": "Delphi / Object Pascal by actual behavior: 5 specialist skills, EN/RU 74-chapter reference, 89 directive cards, 879+ compiler receipts and Code Mode MCP."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "edition": "1.0.0-demo",
+  "full_edition_version": "1.5.2",
+  "as_of": "2026-11-21",
+  "is_demo": true,
+  "demo_included": {
+    "chapter_excerpts": [
+      "10",
+      "13",
+      "31",
+      "41",
+      "70",
+      "73"
+    ],
+    "full_directive_cards": [
+      "extendedcompatibility",
+      "inline",
+      "pushopt-popopt",
+      "warn"
+    ],
+    "sample_receipts": 8,
+    "sample_dpr_files": 6
+  },
+  "full_edition_counts": {
+    "chapters": 74,
+    "topics": 441,
+    "language_words": 123,
+    "intrinsic_names": 61,
+    "long_directives": 95,
+    "short_forms": 22,
+    "reference_cards": 89,
+    "directive_cards": 88,
+    "investigation_cards": 1,
+    "directive_names_with_cards": 95,
+    "unconfirmed_source_forms": 1,
+    "directive_names_index_only": 0,
+    "book_characters": 1339924,
+    "book_words": 142697,
+    "book": "book/DELPHI_BEHAVIOR_CONTRACTS_RU.md"
+  },
+  "counts": {
+    "chapters": 74,
+    "topics": 441,
+    "language_words": 123,
+    "intrinsic_names": 61,
+    "long_directives": 95,
+    "short_forms": 22,
+    "reference_cards": 89,
+    "directive_cards": 88,
+    "investigation_cards": 1,
+    "directive_names_with_cards": 95,
+    "unconfirmed_source_forms": 1,
+    "directive_names_index_only": 0,
+    "book_characters": 1339924,
+    "book_words": 142697,
+    "book": "book/DELPHI_BEHAVIOR_CONTRACTS_RU.md"
+  }
+}

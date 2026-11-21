@@ -1,0 +1,4 @@
+description = "Core Delphi behavior analysis"
+prompt = """
+Load skill `delphi-behavior-contracts` via MCP or `skills/delphi-behavior-contracts/SKILL.md`. Establish compiler profile first, then analyze: {{args}}
+"""

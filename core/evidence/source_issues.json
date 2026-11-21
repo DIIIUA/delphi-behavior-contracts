@@ -1,0 +1,275 @@
+{
+  "edition": "1.0.0-demo",
+  "note": "Summary index of all 30 tracked documentation/compiler discrepancies (full technical dossiers are in the full edition).",
+  "issues": [
+    {
+      "id": "RANGECHECKS_DEFAULT_PROFILE",
+      "status": "RESOLVED_SELECTED_PROFILE",
+      "kind": "Default/profile not measured",
+      "directives": [
+        "RANGECHECKS"
+      ],
+      "summary": "Без явных R/Q в DPROJ Debug и Release дают R-/Q- на Win32 и Win64; INLINE остаётся ON. С явными Debug R+/Q+ получаем включённые проверки. Название конфигурации само по себе не задаёт состояния директив."
+    },
+    {
+      "id": "FINITEFLOAT_UNDERSPECIFIED",
+      "status": "PARTIALLY_RESOLVED",
+      "kind": "Official description incomplete",
+      "directives": [
+        "FINITEFLOAT"
+      ],
+      "summary": "Новые overflow/underflow-пробы: ON и OFF дают одинаковый результат внутри каждой проверенной пары target/маски. С масками — infinity/zero; без масок Win32 даёт EInvalidOp, Win64 EOverflow/EUnderflow. Причина и полный эфф"
+    },
+    {
+      "id": "EXTENDED_TARGET_PROFILE",
+      "status": "PARTIALLY_RESOLVED",
+      "kind": "Representation needs target evidence",
+      "directives": [
+        "EXTENDEDCOMPATIBILITY"
+      ],
+      "summary": "На ARM32/64 compile-time SizeOf: OFF=8, ON=10, packed запись=12, обычная=24. Это размер хранения, не точность вычислений. Добавлены DLL producer/consumer ON/OFF на Win32/64 с согласованными типами и отдельным временем жи"
+    },
+    {
+      "id": "LONGSTRINGS_DOC_CONFLICT",
+      "status": "OPEN",
+      "kind": "Official page internally inconsistent",
+      "directives": [
+        "LONGSTRINGS"
+      ],
+      "summary": "Прежние H-/TypeInfo-контрпримеры UnicodeString на текущем Windows DCC сохранены. Официальная страница одновременно содержит obsolete/ignored и старое объяснение H-. Надёжная версия перехода не найдена."
+    },
+    {
+      "id": "WARNINGS_ERROR_PROFILE",
+      "status": "PARTIALLY_RESOLVED",
+      "kind": "Version/syntax depth incomplete",
+      "directives": [
+        "WARNINGS"
+      ],
+      "summary": "На Win32/64 глобальный OFF подавляет выбранный per-ID ERROR в обоих порядках; per-ID OFF подавляет выбранные предупреждения при глобальном ERROR. В испытанном теле процедуры внутренний ERROR перед deprecated-вызовом даёт"
+    },
+    {
+      "id": "INLINE_DEFAULT_PROFILE",
+      "status": "RESOLVED_SELECTED_PROFILE",
+      "kind": "Language/compiler/IDE defaults distinct",
+      "directives": [
+        "INLINE"
+      ],
+      "summary": "Без явного переключателя IFOPT INLINE ON истинен в обоих Windows Debug/Release. При O+ новые ON/AUTO/OFF, marked/plain формы дают одинаковый вычисленный результат; это само по себе не доказывает встраивание; прежние физи"
+    },
+    {
+      "id": "TYPEINFO_DOC_CONFLICT",
+      "status": "DOCUMENTED_RULE",
+      "kind": "Official sentence inconsistent",
+      "directives": [
+        "TYPEINFO"
+      ],
+      "summary": "Опровергающая фраза TYPEINFO конфликтует с Published Members. Более точный раздел разрешает собственный M+ либо M+ у предка;TPersistent не обязателен."
+    },
+    {
+      "id": "IFOPT_TABLE_TYPOS",
+      "status": "PARTIALLY_RESOLVED",
+      "kind": "Official syntax table contains damaged entries",
+      "directives": [
+        "IFOPT"
+      ],
+      "summary": "Оставшиеся табличные строки проверены на Win32/64. TYPEINF, SETSUBVERSION, SETUSERVERSION отвергнуты E1030; TYPEINFO, SETPESUBSYSVERSION, SETPEUSERVERSION с явным состоянием подтверждены. Нельзя считать произвольный поло"
+    },
+    {
+      "id": "PUSHOPT_TABLE_TYPOS",
+      "status": "PARTIALLY_RESOLVED",
+      "kind": "Official options list contains typos",
+      "directives": [
+        "PUSHOPT",
+        "POPOPT"
+      ],
+      "summary": "Вложенный include восстанавливает R/Q по стеку. Несогласованный PUSHOPT даёт W1079, POPOPT — W1078 на Win32/64. Прежние хвосты BOGUS_OPT/FINITEFLOATT принимались, но восстанавливался весь набор, поэтому это не доказатель"
+    },
+    {
+      "id": "EXTRA_DIRECTIVES_NOT_REVIEWED",
+      "status": "PARTIALLY_DOCUMENTED",
+      "kind": "Known outside baseline;detail pending",
+      "directives": [
+        "PUSHOPT",
+        "IFOPT"
+      ],
+      "summary": "Серии P2 и P13 (Win32 Debug) проверили все 7 остаточных табличных опций и на реальных конструкциях: {$OLDOBJWARN ON} на старом object (включая virtual) не породил предупреждений (0 диагн.); модификатор процедуры unsafe; "
+    },
+    {
+      "id": "IMAGEBASE_TARGET_SCOPE",
+      "status": "RESOLVED_SELECTED_PROFILE",
+      "kind": "Historical target description",
+      "directives": [
+        "IMAGEBASE"
+      ],
+      "summary": "С DYNAMICBASE OFF/HIGHENTROPYVA OFF измеренный HInstance равен запрошенному $610000 на Win32 и $181000000 на Win64. С прежними ASLR ON preferred ImageBase сохранялся в PE, а loader перемещал образ."
+    },
+    {
+      "id": "LIBRARY_NAMING_DEFAULTS",
+      "status": "DOCUMENTED_TARGET_BOUNDARY",
+      "kind": "Mixed/default naming examples",
+      "directives": [
+        "LIBPREFIX",
+        "LIBSUFFIX",
+        "LIBVERSION"
+      ],
+      "summary": "В серии P11 (P11_LibNaming_Dll32, Win32 Debug) библиотека с LIBPREFIX='my_', LIBSUFFIX='_v1', LIBVERSION='2.0' реально породила PE-файл my_P11_LibNaming_Dll32_v1.2.0.dll (48640 B, 0x14c, FileChars=0x2102). Сборка .dpk/.b"
+    },
+    {
+      "id": "EXTENSION_LOCALIZATION_EXAMPLE",
+      "status": "DOCUMENTED_TARGET_BOUNDARY",
+      "kind": "Inconsistent localization example",
+      "directives": [
+        "EXTENSION"
+      ],
+      "summary": "В серии P11 (P11_Extension32, Win32 Debug) директива {$EXTENSION 'bin'} реально породила валидный PE-образ P11_Extension32.bin (49152 B, 0x14c). Загрузка локализованных .DE/.DEU resource-DLL загрузчиком Windows отдельно "
+    },
+    {
+      "id": "INCLUDE_STATEMENT_PART",
+      "status": "RESOLVED_SELECTED_PROFILE",
+      "kind": "Official restriction contradicted by selected current compiler observations",
+      "directives": [
+        "INCLUDE"
+      ],
+      "summary": "На Win32/64 включение может разделять begin/end; работают default .pas и quoted filename с пробелом. Текст {$I ...} внутри строкового литерала остаётся строкой. С прежними expression/record/uses/case пробами документальн"
+    },
+    {
+      "id": "RESOURCE_PREDICATE_VERSION",
+      "status": "PARTIALLY_RESOLVED",
+      "kind": "Feature version unspecified",
+      "directives": [
+        "RESOURCE"
+      ],
+      "summary": "Новый авторский RCDATA 13 bytes: A B включает ресурс, если определён хотя бы один идентификатор. Определение только символа OR также включает запись A OR B. Поэтому прежнее название «OR-предикат» не доказывало булеву гра"
+    },
+    {
+      "id": "CONDITIONAL_TERMINATOR_WORDING",
+      "status": "DOCUMENTED_VERSION_BOUNDARY",
+      "kind": "Legacy wording explained by newer specific page",
+      "directives": [
+        "IF",
+        "ELSEIF",
+        "ENDIF",
+        "IFEND"
+      ],
+      "summary": "Страницы IF/ELSEIF/ENDIF содержат старое требование IFEND;IFEND/LEGACYIFEND описывают изменение с XE4."
+    },
+    {
+      "id": "NOINCLUDE_MATCHING_PROFILE",
+      "status": "RESOLVED_SELECTED_PROFILE",
+      "kind": "Matching details unspecified",
+      "directives": [
+        "NOINCLUDE"
+      ],
+      "summary": "14 свежих сборок с -JPHNE подтвердили по ConsumerU.hpp: имя Pascal-unit без расширения, регистронезависимо; scoped uses требует полное scoped имя. .hpp/.pas и неполное scoped имя дают E2003. Control действительно содержи"
+    },
+    {
+      "id": "CODEPAGE_SOURCE_FORM_UNCONFIRMED",
+      "status": "PARTIALLY_RESOLVED",
+      "kind": "Unconfirmed Embarcadero source directive",
+      "directives": [
+        "CODEPAGE"
+      ],
+      "summary": "{$CODEPAGE 65001}, {$CODEPAGE 1251}, quoted UTF8 дают E1030 на Win32/64. BOM/--codepage controls записаны. Неоднозначные CP1251 C6 88 читаются в IDE route как один U+0188 даже при --codepage:1251; однозначные CP1251 и UT"
+    },
+    {
+      "id": "RESOURCERESERVE_CURRENT_TARGET",
+      "status": "OPEN",
+      "kind": "Historical target applicability",
+      "directives": [
+        "RESOURCERESERVE"
+      ],
+      "summary": "Документация относит RESOURCERESERVE к Linux; прежнее принятие Win32 не доказывает ELF layout. Android ELF не подменяет Linux compiler/linker."
+    },
+    {
+      "id": "DEBUGINFO_PROFILE_DEPTH",
+      "status": "RESOLVED_SELECTED_PROFILE",
+      "kind": "Short directive page omits newer modes",
+      "directives": [
+        "DEBUGINFO"
+      ],
+      "summary": "D0/D1/D2 units повторены на Win32/64. В CRLF-потребителях D1 и D2 debugger останавливается на line 9: Input=41; после step LocalValue=42 на line 10. В одном D2 Win32 location API временно вернул line 0, но evaluation thr"
+    },
+    {
+      "id": "REFERENCEINFO_LONG_FORM_TEXT",
+      "status": "DOCUMENTED_SYNTAX",
+      "kind": "Malformed long-form examples",
+      "directives": [
+        "REFERENCEINFO",
+        "DEFINITIONINFO"
+      ],
+      "summary": "В старой таблице есть пропуски $,но Option OPT отдельно показывает правильные {$REFERENCEINFO ON/OFF} и {$DEFINITIONINFO ON/OFF}."
+    },
+    {
+      "id": "PROGRAM_CONTROL_TARGET_COPY",
+      "status": "PARTIALLY_RESOLVED",
+      "kind": "Target labels repeat x86 description",
+      "directives": [],
+      "summary": "Добавлены отдельные Windows DLL producer/consumer: согласованные ON/OFF Extended, plain record by value/return/var, UnicodeString с SimpleShareMem первым в обоих modules, возвращаемый interface. Scoped consumer завершает"
+    },
+    {
+      "id": "RECORD_CONSTRAINT_MANAGED_BOUNDARY",
+      "status": "RESOLVED_SELECTED_PROFILE",
+      "kind": "Constraint description lacks concrete-type boundary",
+      "directives": [],
+      "summary": "На Win32/64/ARM32/ARM64 record принял nested plain/text/CMR/weak записи и отверг static arrays/pointer/method pointer/closure/dynamic array. unmanaged принял nested plain, plain static array, pointer, method pointer; отв"
+    },
+    {
+      "id": "NAMEOF_DETAILED_GRAMMAR",
+      "status": "PARTIALLY_RESOLVED",
+      "kind": "New intrinsic documented through release examples",
+      "directives": [],
+      "summary": "Добавлены nested type, nested closed generic type, constructor/destructor и formal parameter. Scoped enum TEnum.Second, array element и pointer dereference отвергнуты E2372 на всех четырёх targets. Две ARM linker-попытки"
+    },
+    {
+      "id": "WEAK_PACKAGE_STATE_SCOPE",
+      "status": "DOCUMENTED_RULE",
+      "kind": "General page and release-specific diagnostic have different scope",
+      "directives": [
+        "WEAKPACKAGEUNIT"
+      ],
+      "summary": "В дополнение к документальной границе E2221, в серии P5 (Delphi 13 CE, Win32 Debug) модуль с {$WEAKPACKAGEUNIT ON} и глобальной переменной отвергнут при компиляции с E2203 $WEAKPACKAGEUNIT 'WeakU' contains global data и "
+    },
+    {
+      "id": "WIN64_ASSEMBLER_DOC_DETAILS",
+      "status": "RESOLVED_SELECTED_PROFILE",
+      "kind": "Compiler-specific pages disagree onlow-level boundary",
+      "directives": [],
+      "summary": "Новая Win64-проба .PUSHNV RBX/.SAVENV XMM6/.PARAMS4 провела исключение из Pascal через ASM bridge: caught=TRUE, preserved=TRUE. В сочетании с прежним XMM4/5 volatile и XMM6 nonvolatile расхождение DocWiki разобрано с пер"
+    },
+    {
+      "id": "NAMESPACE_LEGACY_AGGREGATION",
+      "status": "PARTIALLY_RESOLVED",
+      "kind": "Namespace page mixesunit-scope andassembly-era descriptions",
+      "directives": [],
+      "summary": "Свежая Win32/64 матрица: full uses+full qualification работает; short uses с -NS работает; full uses+short qualifier остаётся ошибкой даже с -NS. Namespace-only import/aggregate access не работают. Страница Using Namespa"
+    },
+    {
+      "id": "IF_UNDECLARED_IDENTIFIER_OBSERVATION",
+      "status": "OPEN",
+      "kind": "Measured compiler result differs from documented conditional-compilation rule",
+      "directives": [
+        "IF",
+        "ELSE",
+        "IFEND"
+      ],
+      "summary": "Прежняя Win32/64 матрица противоречивых unguarded IF сравнений и warning branches сохранена без изменений; сегодняшняя первичная IF-страница не объясняет наблюдаемую общую семантику. Новая выдуманная внутренняя модель pa"
+    },
+    {
+      "id": "IF_TYPED_CONSTANT_OBSERVATION",
+      "status": "OPEN",
+      "kind": "Observed result differs from unconditional published rule",
+      "directives": [
+        "IF",
+        "WRITEABLECONST"
+      ],
+      "summary": "Прежние TC comparisons/TC+1 под J-/J+ и E2012 для not TC сохранены. Документация не согласована с этим поведением текущего DCC; результаты не переименованы в нормальную константную семантику."
+    },
+    {
+      "id": "GENERIC_ARGUMENT_DOC_COUNTEREXAMPLE",
+      "status": "OPEN",
+      "kind": "Observed result differs from unconditional published rule",
+      "directives": [],
+      "summary": "Прежние успешно материализованные named static arrays/ShortString и другие type arguments сохранены. F2084 NC2130 для file/TextFile с Default(T) остаётся внутренним сбоем, не допустимым обычным языковым отказом. Общее за"
+    }
+  ]
+}

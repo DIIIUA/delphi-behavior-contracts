@@ -1,0 +1,9 @@
+# Local offline MCP (stdio, zero dependencies)
+[mcp_servers.delphi_behavior_contracts_local]
+command = "python"
+args = ["<SUITE_PATH>/mcp/local-mcp/server.py"]
+
+# Optional self-hosted remote MCP (Streamable HTTP)
+[mcp_servers.delphi_behavior_contracts_cloud]
+url = "https://delphi-behavior-contracts-mcp.<your-subdomain>.workers.dev/mcp"
+bearer_token_env_var = "DELPHI_MCP_KEY"

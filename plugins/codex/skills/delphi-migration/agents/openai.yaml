@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delphi Migration"
+  short_description: "Port Delphi logic to C#, C++, Java, Python without behavior drift"
+  default_prompt: "Use $delphi-migration to extract the exact Delphi behavior contract and map it safely to the target language."

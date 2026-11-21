@@ -1,0 +1,9 @@
+extensions:
+  delphi-behavior-contracts-mcp:
+    name: Delphi Behavior Contracts
+    type: stdio
+    cmd: python
+    args:
+      - "<SUITE_PATH>/mcp/local-mcp/server.py"
+    enabled: true
+    envs: {}

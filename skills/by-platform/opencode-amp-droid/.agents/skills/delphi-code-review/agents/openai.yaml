@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delphi Code Review"
+  short_description: "Review ownership, lifetimes, exceptions, aliasing, interfaces and threads"
+  default_prompt: "Use $delphi-code-review to audit ownership, managed lifetimes, aliasing and exception boundaries in this Delphi code."

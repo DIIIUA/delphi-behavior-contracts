@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delphi Directives"
+  short_description: "Compiler directives, conditionals ($IF/$IFOPT/$WARN) and build profiles"
+  default_prompt: "Use $delphi-directives to verify directive scope, target behavior and build-profile precedence."

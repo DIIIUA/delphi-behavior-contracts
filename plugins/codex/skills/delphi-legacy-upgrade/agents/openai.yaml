@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delphi Legacy Upgrade"
+  short_description: "Upgrade Delphi 7/2007/XE/32-bit/ANSI/ARC code to Delphi 12-13 & Win64"
+  default_prompt: "Use $delphi-legacy-upgrade to audit Unicode, 64-bit pointer/ABI and directive changes before upgrading legacy Delphi code."

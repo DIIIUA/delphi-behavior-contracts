@@ -1,0 +1,22 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "delphi-behavior-contracts-local": {
+      "type": "local",
+      "command": [
+        "python",
+        "<SUITE_PATH>/mcp/local-mcp/server.py"
+      ],
+      "environment": {},
+      "enabled": true
+    },
+    "delphi-behavior-contracts-cloud": {
+      "type": "remote",
+      "url": "https://delphi-behavior-contracts-mcp.<your-subdomain>.workers.dev/mcp",
+      "headers": {
+        "Authorization": "Bearer {env:DELPHI_MCP_KEY}"
+      },
+      "enabled": false
+    }
+  }
+}

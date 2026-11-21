@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "delphi-behavior-contracts",
+  "version": "1.0.0-demo",
+  "description": "[DEMO] Delphi / Object Pascal by actual behavior: 5 specialist skills, compiler-measured EN/RU reference (74 chapters, 89 directives, 879+ receipts) and Code Mode MCP server.",
+  "author": {
+    "name": "Anton Fishman",
+    "url": "https://silentfish.dev/delphi"
+  },
+  "homepage": "https://silentfish.dev/delphi",
+  "license": "LicenseRef-Commercial",
+  "keywords": [
+    "delphi",
+    "object-pascal",
+    "migration",
+    "legacy",
+    "code-review",
+    "compiler-directives",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Delphi Behavior Contracts (DEMO)",
+    "shortDescription": "[DEMO] Compiler-measured Delphi language behavior, review and safe migration",
+    "longDescription": "Version-aware Delphi / Object Pascal language reference (74 EN/RU chapters, 89 compiler directive cards, 879+ live Delphi 13 CE observations) with 5 specialist skills and Code Mode MCP.",
+    "developerName": "Anton Fishman",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://silentfish.dev/delphi",
+    "defaultPrompt": [
+      "Audit this Delphi unit for ownership, lifetime, aliasing and exception bugs",
+      "Port this Delphi function to C# while preserving exact runtime semantics",
+      "Explain the effective compiler directives and Win32 vs Win64 ABI traps in this project"
+    ],
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg",
+    "logoDark": "./assets/logo.svg",
+    "screenshots": [],
+    "brandColor": "#C81E3A"
+  }
+}

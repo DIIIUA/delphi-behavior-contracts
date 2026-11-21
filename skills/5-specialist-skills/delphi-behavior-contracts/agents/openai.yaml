@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delphi Behavior Contracts"
+  short_description: "Delphi language behavior, versions and safe migration"
+  default_prompt: "Use $delphi-behavior-contracts to establish the target compiler and explain, review, implement or migrate the requested Delphi behavior."

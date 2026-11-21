@@ -1,0 +1,18 @@
+{
+  "name": "delphi-behavior-contracts",
+  "version": "1.0.0-demo",
+  "description": "[DEMO] Delphi / Object Pascal by actual behavior: core language reference, migration, legacy upgrade, compiler directives and code review. Compiler-measured on Delphi 13, EN and RU.",
+  "author": {
+    "name": "Anton Fishman"
+  },
+  "homepage": "https://silentfish.dev/delphi",
+  "keywords": [
+    "delphi",
+    "object-pascal",
+    "migration",
+    "legacy",
+    "code-review",
+    "compiler-directives",
+    "mcp"
+  ]
+}

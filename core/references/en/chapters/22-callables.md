@@ -1,0 +1,34 @@
+# 22. Procedural types and events
+
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+
+This chapter is **included in full in the paid edition** (`1,446` words, `114` lines).
+
+## Sections covered in the full chapter
+
+- Three families of callable types and their memory layouts
+- Delphi events (`OnClick`) are not a special entity or multicast
+- Asymmetric conversions and the prohibition of nested procedures
+- Signature compatibility, calling conventions, and C callbacks
+- Context without parentheses: invocation versus address, `@F`, `@@F`, and `TMethod` comparison
+- Version and target boundaries
+- Primary sources and verification status
+
+## Indexed topics
+
+- `procedural variable`
+- `method pointer of object`
+- `callback assignment vs invocation`
+- `ABI callable compatibility`
+- `procedural expression invocation`
+- `at and double-at address`
+- `method to method-reference conversion`
+- `nested procedure-pointer exclusion`
+
+## Want to evaluate real depth right now?
+
+Read the 6 multi-difficulty demo excerpts included in this package:
+- Level 1 (Basic trap): [10-arrays.md](10-arrays.md)
+- Level 2 (Intermediate): [13-managed-records.md](13-managed-records.md)
+- Level 3 (Advanced): [31-generics.md](31-generics.md) and [41-directives.md](41-directives.md)
+- Level 4 (Hardcore ABI & Evolution): [70-floating-profiles.md](70-floating-profiles.md) and [73-evolution-old-to-new.md](73-evolution-old-to-new.md)

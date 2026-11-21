@@ -1,0 +1,4 @@
+description = "Audit Delphi ownership, lifetimes and bugs"
+prompt = """
+Load skill `delphi-code-review`. Audit ownership, managed lifetimes, aliasing, interfaces, exceptions and threading in: {{args}}
+"""

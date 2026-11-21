@@ -1,0 +1,8 @@
+name: Delphi Behavior Contracts MCP
+version: 1.0.0
+schema: v1
+mcpServers:
+  - name: delphi-behavior-contracts-mcp
+    command: python
+    args:
+      - "<SUITE_PATH>/mcp/local-mcp/server.py"

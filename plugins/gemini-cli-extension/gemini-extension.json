@@ -1,0 +1,22 @@
+{
+  "name": "delphi-behavior-contracts",
+  "version": "1.0.0-demo",
+  "description": "[DEMO] Compiler-measured Delphi / Object Pascal reference, 5 specialist skills, slash commands and MCP server.",
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "Optional Remote MCP Key",
+      "description": "Optional Bearer key if pointing to a self-hosted remote MCP server.",
+      "envVar": "DELPHI_MCP_KEY",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "delphi-behavior-contracts-mcp": {
+      "command": "python",
+      "args": [
+        "${extensionPath}/mcp/local-mcp/server.py"
+      ]
+    }
+  }
+}

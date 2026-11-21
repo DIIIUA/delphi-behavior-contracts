@@ -1,0 +1,33 @@
+# 35. Ручная и управляемая память
+
+> **[DEMO-РЕДАКЦИЯ — Ознакомительный пакет]** Это бесплатная демо-версия **Delphi Behavior Contracts v1.0.0** (в полной версии: 74 полные главы EN/RU, 89 полных карточек директив, 879+ наблюдений компилятора). Сохранено полное оригинальное оглавление, паспорт проверки, все рабочие плагины, чистые скиллы и локальный MCP-сервер с Code Mode — чтобы ваш ИИ мог сразу проверить инструмент на практике и честно сказать, подходит ли вам полная версия. Полная версия: https://silentfish.dev/delphi
+
+Эта глава **входит полностью в платную редакцию** (`1,365` слов, `116` строк).
+
+## Разделы, разобранные в полной главе
+
+- Пять областей размещения и их жизненный цикл
+- Контраст `New`/`Dispose` против `GetMem`/`AllocMem`/`ReallocMem`/`FreeMem`
+- Точный контракт `System.Initialize` и разрушение кучи в `FillChar` / `Move`
+- Compile-time стражи перед `Move`/`FillChar` и сырыми пулами памяти (`IsManagedType`, `HasWeakRef`, `GetTypeKind`)
+- Подсчёт ссылок против GC, границы `.dll` и историческая дуга ARC
+- Самодостаточный пример (`program ... end.`)
+- Первоисточники и статус подтверждения
+
+## Адресованные темы главы
+
+- `stack heap`
+- `New Dispose`
+- `GetMem FreeMem ReallocMem`
+- `managed values`
+- `Move FillChar hazard`
+- `DLL memory manager`
+- `historical ARC`
+
+## Где посмотреть реальную глубину прямо в этом DEMO?
+
+Откройте 6 разноуровневых фрагментов, включённых в этот демо-пакет:
+- Уровень 1 (Базовая ловушка): [10-arrays.md](10-arrays.md)
+- Уровень 2 (Средний): [13-managed-records.md](13-managed-records.md)
+- Уровень 3 (Продвинутый): [31-generics.md](31-generics.md) и [41-directives.md](41-directives.md)
+- Уровень 4 (Хардкор ABI и эволюция): [70-floating-profiles.md](70-floating-profiles.md) и [73-evolution-old-to-new.md](73-evolution-old-to-new.md)

@@ -1,0 +1,4 @@
+description = "Upgrade legacy Delphi (D7/2007/XE/32-bit/ANSI) to Delphi 12-13 & Win64"
+prompt = """
+Load skill `delphi-legacy-upgrade`. Audit Unicode, Win64 pointer/ABI and directive traps in: {{args}}
+"""

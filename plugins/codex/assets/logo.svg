@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Delphi Behavior Contracts">
+  <defs>
+    <linearGradient id="dbc-bg" x1="28" y1="28" x2="228" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C81E3A"/>
+      <stop offset="100%" stop-color="#7F1228"/>
+    </linearGradient>
+    <linearGradient id="dbc-accent" x1="64" y1="64" x2="192" y2="192" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F4A261"/>
+    </linearGradient>
+  </defs>
+  <rect x="26" y="26" width="204" height="204" rx="44" fill="url(#dbc-bg)" stroke="#F4A261" stroke-width="6"/>
+  <path d="M74 68 H126 C166 68 188 92 188 128 C188 164 166 188 126 188 H74 Z M102 94 V162 H124 C148 162 160 149 160 128 C160 107 148 94 124 94 Z" fill="#FFFFFF"/>
+  <path d="M150 166 L168 184 L202 146" fill="none" stroke="url(#dbc-accent)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

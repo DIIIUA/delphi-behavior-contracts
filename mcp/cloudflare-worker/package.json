@@ -1,0 +1,17 @@
+{
+  "name": "delphi-behavior-contracts-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:corpus": "node scripts/build-corpus.mjs",
+    "dev": "npm run build:corpus && wrangler dev --port 8787",
+    "typecheck": "tsc --noEmit",
+    "deploy": "npm run build:corpus && wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "latest",
+    "typescript": "^5.8.0",
+    "wrangler": "latest"
+  }
+}
