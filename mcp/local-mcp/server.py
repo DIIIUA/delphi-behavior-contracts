@@ -64,13 +64,11 @@ def resolve_roots(explicit_root=None):
     if env_root:
         candidates.append(Path(env_root).resolve())
     # Unified suite layout: <suite>/mcp/local-mcp/server.py -> <suite>/core
-    candidates.extend([
-        here.parents[2] / 'core',
-        here.parents[1] / 'core',
-        here.parents[2],
-        here.parents[1],
-        here.parent,
-    ])
+    ups = list(here.parents)[:3]  # works for short paths such as /app/server.py
+    for up in reversed(ups[1:]):
+        candidates.append(up / 'core')
+    candidates.append(here.parent / 'core')
+    candidates.extend(reversed(ups))
     core_root = None
     for c in candidates:
         if (c / 'references' / 'en' / 'chapters').is_dir():
