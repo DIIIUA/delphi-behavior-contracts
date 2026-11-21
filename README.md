@@ -72,4 +72,4 @@ Every license includes the **exact same complete Universal Suite** (all 74 EN & 
 - **Team Suite — ~~$490~~ $349** *(launch price)*: up to 10 developers, shared internal Docker/Cloudflare MCP server & private company repo.
 - **Agency / Integrator — $1,290**: unlimited internal seats + commercial rights across unlimited client migrations and technical audits.
 
-👉 **[Get Full Suite at silentfish.dev/delphi/buy](https://silentfish.dev/delphi/buy)** · **[Скачать бесплатное демо](https://github.com/DIIIUA/delphi-behavior-contracts/releases/latest)** · **[Discussions](https://github.com/DIIIUA/delphi-behavior-contracts/discussions)**
+👉 **[Get Full Suite at silentfish.dev/delphi/buy](https://silentfish.dev/delphi/buy)** · **[Download Free Demo](https://github.com/DIIIUA/delphi-behavior-contracts/releases/latest)** · **[Discussions](https://github.com/DIIIUA/delphi-behavior-contracts/discussions)**
