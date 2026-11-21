@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.DIIIUA/delphi-behavior-contracts",
+  "title": "Delphi Behavior Contracts (DEMO)",
+  "description": "Compiler-checked Delphi / Object Pascal semantics for AI agents: port, upgrade, directives, review.",
+  "websiteUrl": "https://silentfish.dev/delphi",
+  "repository": {
+    "url": "https://github.com/DIIIUA/delphi-behavior-contracts",
+    "source": "github"
+  },
+  "version": "1.0.0-demo",
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/diiiua/delphi-behavior-contracts:1.0.0-demo",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}
