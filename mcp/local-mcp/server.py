@@ -81,8 +81,8 @@ def resolve_roots(explicit_root=None):
         )
     skill_candidates = [
         core_root / 'skills',
-        here.parents[2] / 'platforms' / '01-claude-code-plugin' / 'skills',
-        here.parents[2] / 'skills',
+        ups[-1] / 'platforms' / '01-claude-code-plugin' / 'skills',
+        ups[-1] / 'skills',
         core_root.parent / 'skills',
     ]
     skills_root = None
