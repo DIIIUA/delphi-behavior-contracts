@@ -5,6 +5,8 @@
 
 [English](README.md) · [Официальный сайт (RU)](https://silentfish.dev/ru/delphi) · [Website (EN)](https://silentfish.dev/delphi) · [Тарифы (от $99)](https://silentfish.dev/ru/delphi/buy) · [Скачать бесплатное демо](https://github.com/DIIIUA/delphi-behavior-contracts/releases/latest) · [Обсуждения](https://github.com/DIIIUA/delphi-behavior-contracts/discussions)
 
+[![Delphi Behavior Contracts (DEMO) MCP server](https://mcprush.com/badge/delphi-behavior-contracts-demo-mcp/card.svg)](https://mcprush.com/to/delphi-behavior-contracts-demo-mcp?ref=badge)
+
 ---
 
 ## Почему обычные нейросети ломают проекты на Delphi
