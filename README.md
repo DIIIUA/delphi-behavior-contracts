@@ -10,6 +10,8 @@ Compiler-verified Delphi / Object Pascal engineering suite: **74 EN & RU chapter
 [![Chapters](https://img.shields.io/badge/Chapters-74%20EN%20%26%20RU-2ea44f)](core/references/en/INDEX.md)
 [![Plugins & Skills](https://img.shields.io/badge/Platforms-8%20Plugins%20%2B%2015%20Skill%20Layouts-7c3aed)](START_HERE.md)
 
+[![Delphi Behavior Contracts (DEMO) MCP server](https://mcprush.com/badge/delphi-behavior-contracts-demo-mcp/card.svg)](https://mcprush.com/to/delphi-behavior-contracts-demo-mcp?ref=badge)
+
 ---
 
 ## Why Ordinary AI Models Silently Break Delphi Code
