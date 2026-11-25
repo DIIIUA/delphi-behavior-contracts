@@ -18,7 +18,8 @@
       "directives": [
         "FINITEFLOAT"
       ],
-      "summary": "Новые overflow/underflow-пробы: ON и OFF дают одинаковый результат внутри каждой проверенной пары target/маски. С масками — infinity/zero; без масок Win32 даёт EInvalidOp, Win64 EOverflow/EUnderflow. Причина и полный эфф"
+      "summary": "Новые overflow/underflow-пробы: ON и OFF дают одинаковый результат внутри каждой проверенной пары target/маски. С масками — infinity/zero; без масок Win32 даёт EInvalidOp, Win64 EOverflow/EUnderflow. Причина и полный эфф",
+      "documented_subset": " Граница контекста: аппаратные FPU Control Word (Set8087CW) и MXCSR (SetMXCSR) являются per-thread состоянием CPU и могут изменяться сторонними DLL, драйверами и вызовами ОС (DOCUMENTED; многопоточные/DLL-сценарии отдельно не измерялись)."
     },
     {
       "id": "EXTENDED_TARGET_PROFILE",
@@ -27,7 +28,8 @@
       "directives": [
         "EXTENDEDCOMPATIBILITY"
       ],
-      "summary": "На ARM32/64 compile-time SizeOf: OFF=8, ON=10, packed запись=12, обычная=24. Это размер хранения, не точность вычислений. Добавлены DLL producer/consumer ON/OFF на Win32/64 с согласованными типами и отдельным временем жи"
+      "summary": "На ARM32/64 compile-time SizeOf: OFF=8, ON=10, packed запись=12, обычная=24. Это размер хранения, не точность вычислений. Добавлены DLL producer/consumer ON/OFF на Win32/64 с согласованными типами и отдельным временем жи",
+      "needed": " Win64 ARM64EC (и Windows ARM64) также остаётся неизмеренным целевым профилем и требует живого тулчейна/рантайма."
     },
     {
       "id": "LONGSTRINGS_DOC_CONFLICT",

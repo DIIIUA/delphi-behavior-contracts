@@ -13,6 +13,6 @@ Apply these rules whenever Delphi / Object Pascal code (`.pas`, `.dpr`, `.dpk`, 
 3. **Preserve exact behavior contracts (never assume name equivalence):**
    - `B := A` has six physical models: dynamic arrays alias without copy-on-write on element writes (`Insert`/`Delete`/`SetLength` detach), long strings use copy-on-write, records copy shallowly, classes copy pointers.
    - Assigning a method pointer (`OnClick := Handler`) is not invoking it; closures capture variable cells.
-   - `System.Round` is banker's rounding (half-to-even); `shr` is logical; `Extended` is 10 bytes on Win32 vs 8 bytes on Win64 (`EXTENDEDCOMPATIBILITY ON` on Win64 still uses 53-bit Double arithmetic).
+   - `System.Round` is banker's rounding (half-to-even); `shr` is logical; `Extended` is 10 bytes on Win32 vs 8 bytes on Win64 (`EXTENDEDCOMPATIBILITY ON` on Win64 still uses 64-bit IEEE Double (53-bit significand mantissa) arithmetic).
    - Separate dataset `Post`, `ApplyUpdates`, transaction `Commit`, `Cancel`, rollback, and form close.
 4. **Evidence discipline:** label claims as documented, compiler-observed, inferred, or unknown. Check `VERIFICATION.md` and `SOURCE_ISSUES.md` before relying on disputed edge cases.

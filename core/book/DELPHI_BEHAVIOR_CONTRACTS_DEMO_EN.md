@@ -1,6 +1,6 @@
 # Delphi Behavior Contracts — DEMO Sample Volume (v1.0.0-demo)
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 This compact demo volume contains:
 1. The **complete original Table of Contents** of all 74 chapters and 89 compiler directive cards;
@@ -13,7 +13,7 @@ This compact demo volume contains:
 
 # Delphi book — table of contents (DEMO — Complete Original Table of Contents)
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 **Legend:** `[DEMO EXCERPT]` = rich multi-difficulty excerpt included in this demo (`10, 13, 31, 41, 70, 73`); all other chapters show their full section outline as `[DEMO STUB — Full Edition]`.
 
@@ -105,7 +105,7 @@ Detailed directives (`directives/INDEX.md`); ambiguities (`SOURCE_ISSUES.md`); s
 
 # Verification record
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 Delphi Behavior Contracts 1.0.0, built from research edition 1.5.2 (21 November 2026).
 This record states what was measured, where, and what is **not** claimed.
@@ -176,7 +176,7 @@ latest pass (`research/COMPILER_PASS_150.md`).
 
 # 10. Static, dynamic, and open arrays
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 **Demo Sample Tier:** Level 1 — Basic / Everyday Trap (Dynamic Arrays, Aliasing vs Detachment)
 
@@ -303,7 +303,7 @@ To inspect the complete chapter, verified runnable program, counterexamples and 
 
 # 13. Custom managed records
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 **Demo Sample Tier:** Level 2 — Intermediate (Managed Records Initialize/Finalize/Assign)
 
@@ -420,7 +420,7 @@ To inspect the complete chapter, verified runnable program, counterexamples and 
 
 # 31. Generic types and methods
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 **Demo Sample Tier:** Level 3 — Advanced (Generics, Generic Methods, HasWeakRef / GetTypeKind / E2533)
 
@@ -559,7 +559,7 @@ To inspect the complete chapter, verified runnable program, counterexamples and 
 
 # 41. Compiler directives
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 **Demo Sample Tier:** Level 3 — Advanced (Compiler Directives & 76 Verified $WARN Identifiers)
 
@@ -686,9 +686,9 @@ To inspect the complete chapter, verified runnable program, counterexamples and 
 
 # 70. Numeric profile: type, computation, storage, and exception
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
-**Demo Sample Tier:** Level 4 — Hardcore Compiler ABI (Extended Win32 80-bit vs Win64 53-bit Asymmetry)
+**Demo Sample Tier:** Level 4 — Hardcore Compiler ABI (Extended Win32 80-bit x87 vs Win64 64-bit IEEE Double / 53-bit Mantissa Asymmetry)
 
 
 ## 1. Why the name `Extended` alone is insufficient
@@ -701,12 +701,13 @@ In Object Pascal source text, type `System.Extended` is written the same way on 
 | Intel Win64 (x64, under `{$EXTENDEDCOMPATIBILITY OFF}`) | **8 bytes** | An alias of IEEE `Double` (`binary64`, 53 significant mantissa bits in SSE2 `XMM` registers) |
 | Intel Linux64 / Intel macOS64 | **16 bytes** | An 80-bit x87 value with 6 padding bytes under the System V ABI (**not** IEEE `binary128`!) |
 | ARM (Android, iOS, macOS ARM64) | **8 bytes** | An alias of IEEE `Double` (including Apple Silicon ARM64; do not confuse it with an old macOS Intel example lacking a CPU specification) |
+| Windows ARM64 / Win64 ARM64EC | **Unmeasured (`OPEN`)** | Expected 8-byte IEEE `Double` profile, not yet measured with a live compiler receipt in this suite (tracked in `EXTENDED_TARGET_PROFILE` (`../SOURCE_ISSUES.md#issue-extended-target-profile`)) |
 
 ## 2. Storage compatibility (`{$EXTENDEDCOMPATIBILITY}`, `TExtended80Rec`) and `EXTENDED_TARGET_PROFILE` (`../SOURCE_ISSUES.md#issue-extended-target-profile`)
 
 When porting binary files and records between Win32 and 64-bit targets, strictly distinguish **storage-buffer size** from **the precision of the arithmetic itself**:
 
-- **`{$EXTENDEDCOMPATIBILITY ON|OFF}` (EXTENDEDCOMPATIBILITY card (`../directives/extendedcompatibility.md`), default `OFF`):** the local directive on [Extended type compatibility](https://docwiki.embarcadero.com/RADStudio/Florence/en/Extended_type_compatibility_(Delphi)) switches `Extended` to a 10-byte storage format for binary compatibility of structures. On Win64, however, it **does not enable 80-bit x87 arithmetic**: calculations use a 53-bit `Double` mantissa on SSE2!
+- **`{$EXTENDEDCOMPATIBILITY ON|OFF}` (EXTENDEDCOMPATIBILITY card (`../directives/extendedcompatibility.md`), default `OFF`):** the local directive on [Extended type compatibility](https://docwiki.embarcadero.com/RADStudio/Florence/en/Extended_type_compatibility_(Delphi)) switches `Extended` to a 10-byte storage format for binary compatibility of structures. On Win64, however, it **does not enable 80-bit x87 arithmetic**: calculations use 64-bit IEEE `Double` (53-bit significand mantissa) on SSE2!
 - **`System.TExtended80Rec` ([TExtended80Rec](https://docwiki.embarcadero.com/Libraries/Florence/en/System.TExtended80Rec)):** a packed 10-byte record (`Words`, `Bytes`, `Frac`, `Exp`, `Sign`), explicitly separating serialization of 80-bit data streams from the current platform's arithmetic type.
 
 ### Decisive measurements in series P13 (`P13_ExtCompat_Prec_On32/64` and `P13_ExtPrecision_Off32/64`, `OPEN` for non-Windows)
@@ -719,7 +720,7 @@ Series **P13** on `Delphi 13 CE` (`37.0.60542.8024`, `Win32` `0x14c` and `Win64`
 | **Win64** `OFF` (`P13_ExtPrecision_Off64`) | `8` / `10` | `24; offE=8; offB=16` | `10; offE=1; offB=9` | **`FALSE`** (SSE2 `Double`) | `TRUE` (`984CFB073CDD5E40` is already an 8-byte `Double`) |
 | **Win64** **`{$EXTENDEDCOMPATIBILITY ON}`** (`P13_ExtCompat_Prec_On64`) | **`10` / `10`** | **`24; offE=8; offB=18`** | **`12; offE=1; offB=11`** | **`FALSE`** (the arithmetic is still `Double`!) | **`FALSE`!** (10 bytes `0AC264DA3FE0E9F60540` are truncated through `Double`!) |
 
-**Key physical conclusion:** on `Win64`, directive `{$EXTENDEDCOMPATIBILITY ON}` exactly restores Win32's 10-byte record-field sizes and offsets (`24 / 8 / 18` and `12 / 1 / 11`), **but any reading or assignment of such a 10-byte `Extended` passes through a 53-bit `Double`**, zeroing the low 11 mantissa bits (`prec64=FALSE`, `rt_eq=FALSE`)! To avoid damaging someone else's 80-bit data when forwarding it on Win64, copy it as raw `TExtended80Rec` without casting to `Extended`. Linux64, macOS64, and ARM behavior remains `OPEN` in `EXTENDED_TARGET_PROFILE` (`../SOURCE_ISSUES.md#issue-extended-target-profile`).
+**Key physical conclusion:** on `Win64`, directive `{$EXTENDEDCOMPATIBILITY ON}` exactly restores Win32's 10-byte record-field sizes and offsets (`24 / 8 / 18` and `12 / 1 / 11`), **but any reading or assignment of such a 10-byte `Extended` passes through a 64-bit IEEE `Double` (53-bit significand mantissa)**, zeroing the low 11 mantissa bits (`prec64=FALSE`, `rt_eq=FALSE`)! To avoid damaging someone else's 80-bit data when forwarding it on Win64, copy it as raw `TExtended80Rec` without casting to `Extended`. Linux64, macOS64, and ARM behavior remains `OPEN` in `EXTENDED_TARGET_PROFILE` (`../SOURCE_ISSUES.md#issue-extended-target-profile`).
 
 ## 3. Intermediate precision and historical formats (`{$EXCESSPRECISION}`, `{$REALCOMPATIBILITY}`, `{$SAFEDIVIDE}`)
 
@@ -753,6 +754,7 @@ function SetExceptionMask(const Mask: TArithmeticExceptionMask): TArithmeticExce
 
 - **The exact mask type:** the canonical `SetExceptionMask` signature uses type **`TArithmeticExceptionMask`** (`set of TArithmeticExceptions`, 1 byte). Historical name `TFPUExceptionMask` belongs to x87-specific functions: probe `P2_MathMask_Alias32/64` confirmed that their `TypeInfo` values differ (`same_typeinfo=FALSE`), so portable code should declare `TArithmeticExceptionMask`.
 - **The default change in Delphi 12 Athens:** in classic Delphi versions (through 11 Alexandria), critical exceptions (`exInvalidOp`, `exZeroDivide`, `exOverflow`) were unmasked by default and threw language exceptions. Starting with **Delphi 12 Athens**, page `SetExceptionMask` records a new default: **all 6 FP-exception masks are enabled (`ON`)**. When changing the mask locally, always restore its previous value in `try ... finally`.
+- **Thread, DLL, and OS control-word boundary (`Set8087CW` / `SetMXCSR`, `DOCUMENTED`):** hardware floating-point control registers (**x87 FPU Control Word** via `Get8087CW`/`Set8087CW` and **SSE2 MXCSR** via `GetMXCSR`/`SetMXCSR`) are **per-thread CPU state**. Newly spawned threads, external C/C++ DLLs (DirectX, OpenGL, printer/graphics drivers, COM/OLE servers, third-party math libraries), and OS calls may modify exception masks, rounding modes, or x87 precision bits and leave them changed on return. Do not assume the initial Delphi RTL mask holds after calling foreign code or across threads; save and restore `SetExceptionMask` (or the target-specific control word) inside `try ... finally` on the executing thread.
 
 ### Open question `FINITEFLOAT_UNDERSPECIFIED` (`../SOURCE_ISSUES.md#issue-finitefloat-underspecified`) (`OPEN`)
 
@@ -785,9 +787,9 @@ begin
 
 ---
 
-### [DEMO EXCERPT BOUNDARY — Level 4 — Hardcore Compiler ABI (Extended Win32 80-bit vs Win64 53-bit Asymmetry)]
+### [DEMO EXCERPT BOUNDARY — Level 4 — Hardcore Compiler ABI (Extended Win32 80-bit x87 vs Win64 64-bit IEEE Double / 53-bit Mantissa Asymmetry)]
 
-Shown above: first ~90 lines out of **147 lines** in the full chapter.
+Shown above: first ~90 lines out of **149 lines** in the full chapter.
 
 **Complete section outline in the full edition:**
 - `## 1. Why the name `Extended` alone is insufficient`
@@ -811,7 +813,7 @@ To inspect the complete chapter, verified runnable program, counterexamples and 
 
 # 73. From old to new: the underlying logic of Delphi language evolution
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 **Demo Sample Tier:** Level 4 — Architectural Synthesis (Six Historical Strata: Turbo Pascal to Delphi 13)
 
@@ -933,7 +935,7 @@ To inspect the complete chapter, verified runnable program, counterexamples and 
 
 ---
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 # EXTENDEDCOMPATIBILITY — the Extended compatibility representation
 
@@ -945,7 +947,7 @@ To inspect the complete chapter, verified runnable program, counterexamples and 
 
 The directive controls the **binary storage size** of [`System.Extended`](https://docwiki.embarcadero.com/Libraries/Florence/en/System.Extended) on platforms where `Extended` is compressed by default to 8-byte IEEE-754 `Double` (`Win64` SSE2 and `ARM`; see [Multi-Device Considerations](https://docwiki.embarcadero.com/RADStudio/Florence/en/Delphi_Considerations_for_Multi-Device_Applications); on `Win32` x87, `Extended` is always 10 bytes, and on `Linux64` under the System V ABI, 16 bytes; chapter 07 (`../chapters/07-reals.md`), chapter 70 (`../chapters/70-floating-profiles.md`)):
 - under **`OFF`**, on `Win64`, `Extended` occupies `8` bytes (`Double`);
-- under **`ON`**, on `Win64`, the compiler allocates **10 bytes** (the [`TExtended80Rec`](https://docwiki.embarcadero.com/Libraries/Florence/en/System.TExtended80Rec) layout), **but does NOT enable 80-bit x87 arithmetic**: computation uses the 53-bit precision of `Double`!
+- under **`ON`**, on `Win64`, the compiler allocates **10 bytes** (the [`TExtended80Rec`](https://docwiki.embarcadero.com/Libraries/Florence/en/System.TExtended80Rec) layout), **but does NOT enable 80-bit x87 arithmetic**: computation uses 64-bit IEEE `Double` (53-bit significand mantissa) precision!
 
 ```pascal
 {$EXTENDEDCOMPATIBILITY ON}
@@ -985,7 +987,7 @@ All 23 results (`../research/RESIDUE_23_130.md`); compiler receipt (`../../../ev
 
 ---
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 # INLINE — inlineability and the call site
 
@@ -1032,7 +1034,7 @@ All 23 results (`../research/RESIDUE_23_130.md`); compiler receipt (`../../../ev
 
 ---
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 # PUSHOPT / POPOPT — saving and restoring options
 
@@ -1086,7 +1088,7 @@ All 23 results (`../research/RESIDUE_23_130.md`); compiler receipt (`../../../ev
 
 ---
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 # WARN — a specific warning class
 

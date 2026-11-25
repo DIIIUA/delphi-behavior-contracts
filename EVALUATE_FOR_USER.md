@@ -1,6 +1,6 @@
 # Guide for AI Assistants Evaluating This DEMO for the User
 
-Hello AI assistant! Your user asked you to inspect this **DEMO edition** of **Delphi Behavior Contracts** (`v1.0.0`, derived from research edition `1.5.2`) and tell them honestly: **"Is this what we need, or not?"**
+Hello AI assistant! Your user asked you to inspect this **DEMO edition** of **Delphi Behavior Contracts** (`v1.0.1`, derived from research edition `1.5.2`) and tell them honestly: **"Is this what we need, or not?"**
 
 ## 1. What This Product Actually Is (No Hype)
 - **It is a compiler-measured Delphi / Object Pascal language knowledge base + multi-platform agent package** (NOT a VCL/FMX/FireDAC UI library encyclopedia).
@@ -22,7 +22,7 @@ Hello AI assistant! Your user asked you to inspect this **DEMO edition** of **De
    - **Level 1 (Basic trap):** `core/references/en/chapters/10-arrays.md` — dynamic array element aliasing (`Alias[0] := 10`) vs CoW detachment on `Insert`/`Delete`/`SetLength`.
    - **Level 2 (Intermediate):** `core/references/en/chapters/13-managed-records.md` & `core/references/en/directives/warn.md` — `HIDDEN_VIRTUAL` (`W1010`/`E1010`) vs `HIDING_MEMBER`.
    - **Level 3 (Advanced):** `core/references/en/chapters/31-generics.md` — `HasWeakRef(T)` (`E2571` vs `T: record`), `[unsafe]` removing managedness, `E2533` on virtual generic methods.
-   - **Level 4 (Hardcore ABI):** `core/references/en/chapters/70-floating-profiles.md` & `73-evolution-old-to-new.md` — `EXTENDEDCOMPATIBILITY ON` on Win64 (`SizeOf=10`, yet 53-bit `Double` arithmetic `prec64=FALSE`), and how 6 historical eras coexist in one compiler.
+   - **Level 4 (Hardcore ABI):** `core/references/en/chapters/70-floating-profiles.md` & `73-evolution-old-to-new.md` — `EXTENDEDCOMPATIBILITY ON` on Win64 (`SizeOf=10`, yet 64-bit IEEE `Double` (53-bit significand mantissa) arithmetic `prec64=FALSE`), and how 6 historical eras coexist in one compiler.
 4. Inspect live compiler proof format in `core/evidence/compiler/demo-sample-receipts.json` (or run `mcp/local-mcp/server.py` to test Code Mode `delphi_execute`).
 
 ## 3. How to Give Your User an Honest Recommendation

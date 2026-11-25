@@ -1,8 +1,8 @@
 # 70. Numeric profile: type, computation, storage, and exception
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
-**Demo Sample Tier:** Level 4 — Hardcore Compiler ABI (Extended Win32 80-bit vs Win64 53-bit Asymmetry)
+**Demo Sample Tier:** Level 4 — Hardcore Compiler ABI (Extended Win32 80-bit x87 vs Win64 64-bit IEEE Double / 53-bit Mantissa Asymmetry)
 
 
 ## 1. Why the name `Extended` alone is insufficient
@@ -15,12 +15,13 @@ In Object Pascal source text, type `System.Extended` is written the same way on 
 | Intel Win64 (x64, under `{$EXTENDEDCOMPATIBILITY OFF}`) | **8 bytes** | An alias of IEEE `Double` (`binary64`, 53 significant mantissa bits in SSE2 `XMM` registers) |
 | Intel Linux64 / Intel macOS64 | **16 bytes** | An 80-bit x87 value with 6 padding bytes under the System V ABI (**not** IEEE `binary128`!) |
 | ARM (Android, iOS, macOS ARM64) | **8 bytes** | An alias of IEEE `Double` (including Apple Silicon ARM64; do not confuse it with an old macOS Intel example lacking a CPU specification) |
+| Windows ARM64 / Win64 ARM64EC | **Unmeasured (`OPEN`)** | Expected 8-byte IEEE `Double` profile, not yet measured with a live compiler receipt in this suite (tracked in [`EXTENDED_TARGET_PROFILE`](../SOURCE_ISSUES.md#issue-extended-target-profile)) |
 
 ## 2. Storage compatibility (`{$EXTENDEDCOMPATIBILITY}`, `TExtended80Rec`) and [`EXTENDED_TARGET_PROFILE`](../SOURCE_ISSUES.md#issue-extended-target-profile)
 
 When porting binary files and records between Win32 and 64-bit targets, strictly distinguish **storage-buffer size** from **the precision of the arithmetic itself**:
 
-- **`{$EXTENDEDCOMPATIBILITY ON|OFF}` ([EXTENDEDCOMPATIBILITY card](../directives/extendedcompatibility.md), default `OFF`):** the local directive on [Extended type compatibility](https://docwiki.embarcadero.com/RADStudio/Florence/en/Extended_type_compatibility_(Delphi)) switches `Extended` to a 10-byte storage format for binary compatibility of structures. On Win64, however, it **does not enable 80-bit x87 arithmetic**: calculations use a 53-bit `Double` mantissa on SSE2!
+- **`{$EXTENDEDCOMPATIBILITY ON|OFF}` ([EXTENDEDCOMPATIBILITY card](../directives/extendedcompatibility.md), default `OFF`):** the local directive on [Extended type compatibility](https://docwiki.embarcadero.com/RADStudio/Florence/en/Extended_type_compatibility_(Delphi)) switches `Extended` to a 10-byte storage format for binary compatibility of structures. On Win64, however, it **does not enable 80-bit x87 arithmetic**: calculations use 64-bit IEEE `Double` (53-bit significand mantissa) on SSE2!
 - **`System.TExtended80Rec` ([TExtended80Rec](https://docwiki.embarcadero.com/Libraries/Florence/en/System.TExtended80Rec)):** a packed 10-byte record (`Words`, `Bytes`, `Frac`, `Exp`, `Sign`), explicitly separating serialization of 80-bit data streams from the current platform's arithmetic type.
 
 ### Decisive measurements in series P13 (`P13_ExtCompat_Prec_On32/64` and `P13_ExtPrecision_Off32/64`, `OPEN` for non-Windows)
@@ -33,7 +34,7 @@ Series **P13** on `Delphi 13 CE` (`37.0.60542.8024`, `Win32` `0x14c` and `Win64`
 | **Win64** `OFF` (`P13_ExtPrecision_Off64`) | `8` / `10` | `24; offE=8; offB=16` | `10; offE=1; offB=9` | **`FALSE`** (SSE2 `Double`) | `TRUE` (`984CFB073CDD5E40` is already an 8-byte `Double`) |
 | **Win64** **`{$EXTENDEDCOMPATIBILITY ON}`** (`P13_ExtCompat_Prec_On64`) | **`10` / `10`** | **`24; offE=8; offB=18`** | **`12; offE=1; offB=11`** | **`FALSE`** (the arithmetic is still `Double`!) | **`FALSE`!** (10 bytes `0AC264DA3FE0E9F60540` are truncated through `Double`!) |
 
-**Key physical conclusion:** on `Win64`, directive `{$EXTENDEDCOMPATIBILITY ON}` exactly restores Win32's 10-byte record-field sizes and offsets (`24 / 8 / 18` and `12 / 1 / 11`), **but any reading or assignment of such a 10-byte `Extended` passes through a 53-bit `Double`**, zeroing the low 11 mantissa bits (`prec64=FALSE`, `rt_eq=FALSE`)! To avoid damaging someone else's 80-bit data when forwarding it on Win64, copy it as raw `TExtended80Rec` without casting to `Extended`. Linux64, macOS64, and ARM behavior remains `OPEN` in [`EXTENDED_TARGET_PROFILE`](../SOURCE_ISSUES.md#issue-extended-target-profile).
+**Key physical conclusion:** on `Win64`, directive `{$EXTENDEDCOMPATIBILITY ON}` exactly restores Win32's 10-byte record-field sizes and offsets (`24 / 8 / 18` and `12 / 1 / 11`), **but any reading or assignment of such a 10-byte `Extended` passes through a 64-bit IEEE `Double` (53-bit significand mantissa)**, zeroing the low 11 mantissa bits (`prec64=FALSE`, `rt_eq=FALSE`)! To avoid damaging someone else's 80-bit data when forwarding it on Win64, copy it as raw `TExtended80Rec` without casting to `Extended`. Linux64, macOS64, and ARM behavior remains `OPEN` in [`EXTENDED_TARGET_PROFILE`](../SOURCE_ISSUES.md#issue-extended-target-profile).
 
 ## 3. Intermediate precision and historical formats (`{$EXCESSPRECISION}`, `{$REALCOMPATIBILITY}`, `{$SAFEDIVIDE}`)
 
@@ -67,6 +68,7 @@ function SetExceptionMask(const Mask: TArithmeticExceptionMask): TArithmeticExce
 
 - **The exact mask type:** the canonical `SetExceptionMask` signature uses type **`TArithmeticExceptionMask`** (`set of TArithmeticExceptions`, 1 byte). Historical name `TFPUExceptionMask` belongs to x87-specific functions: probe `P2_MathMask_Alias32/64` confirmed that their `TypeInfo` values differ (`same_typeinfo=FALSE`), so portable code should declare `TArithmeticExceptionMask`.
 - **The default change in Delphi 12 Athens:** in classic Delphi versions (through 11 Alexandria), critical exceptions (`exInvalidOp`, `exZeroDivide`, `exOverflow`) were unmasked by default and threw language exceptions. Starting with **Delphi 12 Athens**, page `SetExceptionMask` records a new default: **all 6 FP-exception masks are enabled (`ON`)**. When changing the mask locally, always restore its previous value in `try ... finally`.
+- **Thread, DLL, and OS control-word boundary (`Set8087CW` / `SetMXCSR`, `DOCUMENTED`):** hardware floating-point control registers (**x87 FPU Control Word** via `Get8087CW`/`Set8087CW` and **SSE2 MXCSR** via `GetMXCSR`/`SetMXCSR`) are **per-thread CPU state**. Newly spawned threads, external C/C++ DLLs (DirectX, OpenGL, printer/graphics drivers, COM/OLE servers, third-party math libraries), and OS calls may modify exception masks, rounding modes, or x87 precision bits and leave them changed on return. Do not assume the initial Delphi RTL mask holds after calling foreign code or across threads; save and restore `SetExceptionMask` (or the target-specific control word) inside `try ... finally` on the executing thread.
 
 ### Open question [`FINITEFLOAT_UNDERSPECIFIED`](../SOURCE_ISSUES.md#issue-finitefloat-underspecified) (`OPEN`)
 
@@ -99,9 +101,9 @@ begin
 
 ---
 
-### [DEMO EXCERPT BOUNDARY — Level 4 — Hardcore Compiler ABI (Extended Win32 80-bit vs Win64 53-bit Asymmetry)]
+### [DEMO EXCERPT BOUNDARY — Level 4 — Hardcore Compiler ABI (Extended Win32 80-bit x87 vs Win64 64-bit IEEE Double / 53-bit Mantissa Asymmetry)]
 
-Shown above: first ~90 lines out of **147 lines** in the full chapter.
+Shown above: first ~90 lines out of **149 lines** in the full chapter.
 
 **Complete section outline in the full edition:**
 - `## 1. Why the name `Extended` alone is insufficient`

@@ -1,4 +1,4 @@
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.0** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
 
 # EXTENDEDCOMPATIBILITY — the Extended compatibility representation
 
@@ -10,7 +10,7 @@
 
 The directive controls the **binary storage size** of [`System.Extended`](https://docwiki.embarcadero.com/Libraries/Florence/en/System.Extended) on platforms where `Extended` is compressed by default to 8-byte IEEE-754 `Double` (`Win64` SSE2 and `ARM`; see [Multi-Device Considerations](https://docwiki.embarcadero.com/RADStudio/Florence/en/Delphi_Considerations_for_Multi-Device_Applications); on `Win32` x87, `Extended` is always 10 bytes, and on `Linux64` under the System V ABI, 16 bytes; [chapter 07](../chapters/07-reals.md), [chapter 70](../chapters/70-floating-profiles.md)):
 - under **`OFF`**, on `Win64`, `Extended` occupies `8` bytes (`Double`);
-- under **`ON`**, on `Win64`, the compiler allocates **10 bytes** (the [`TExtended80Rec`](https://docwiki.embarcadero.com/Libraries/Florence/en/System.TExtended80Rec) layout), **but does NOT enable 80-bit x87 arithmetic**: computation uses the 53-bit precision of `Double`!
+- under **`ON`**, on `Win64`, the compiler allocates **10 bytes** (the [`TExtended80Rec`](https://docwiki.embarcadero.com/Libraries/Florence/en/System.TExtended80Rec) layout), **but does NOT enable 80-bit x87 arithmetic**: computation uses 64-bit IEEE `Double` (53-bit significand mantissa) precision!
 
 ```pascal
 {$EXTENDEDCOMPATIBILITY ON}

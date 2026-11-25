@@ -5,7 +5,7 @@ Compiler-verified Delphi / Object Pascal engineering suite: **74 EN & RU chapter
 
 [Русский](README.ru.md) · [Official Website (EN)](https://silentfish.dev/delphi) · [Сайт (RU)](https://silentfish.dev/ru/delphi) · [Pricing (from $99)](https://silentfish.dev/delphi/buy) · [Download Free Demo](https://github.com/DIIIUA/delphi-behavior-contracts/releases/latest) · [Discussions](https://github.com/DIIIUA/delphi-behavior-contracts/discussions)
 
-[![Release: v1.0.0-demo](https://img.shields.io/badge/Free%20Demo-v1.0.0--demo-blue)](https://github.com/DIIIUA/delphi-behavior-contracts/releases/latest)
+[![Release: v1.0.1-demo](https://img.shields.io/badge/Free%20Demo-v1.0.1--demo-blue)](https://github.com/DIIIUA/delphi-behavior-contracts/releases/latest)
 [![Delphi 13 Verified](https://img.shields.io/badge/Delphi%2013-879%2B%20Compiler%20Proofs-C81E3A)](core/references/en/VERIFICATION.md)
 [![Chapters](https://img.shields.io/badge/Chapters-74%20EN%20%26%20RU-2ea44f)](core/references/en/INDEX.md)
 [![Plugins & Skills](https://img.shields.io/badge/Platforms-8%20Plugins%20%2B%2015%20Skill%20Layouts-7c3aed)](START_HERE.md)
@@ -16,7 +16,7 @@ Compiler-verified Delphi / Object Pascal engineering suite: **74 EN & RU chapter
 
 ## Why Ordinary AI Models Silently Break Delphi Code
 
-Most LLMs guess Delphi from C# syntax and 20-year-old forum posts. Your ported code compiles cleanly and passes happy-path tests — then financial totals drift months later because `System.Round` uses banker's rounding, `shr` is always logical, `Extended` drops from 80-bit to 53-bit on Win64, and assigning a dynamic array shares the buffer **without** copy-on-write.
+Most LLMs guess Delphi from C# syntax and 20-year-old forum posts. Your ported code compiles cleanly and passes happy-path tests — then financial totals drift months later because `System.Round` uses banker's rounding, `shr` is always logical, `Extended` drops from 80-bit x87 to 64-bit IEEE `Double` (53-bit significand mantissa) on Win64, and assigning a dynamic array shares the buffer **without** copy-on-write.
 
 **Delphi Behavior Contracts eliminates the guesswork.** One prevented production bug pays for the entire suite ten times over.
 
@@ -31,7 +31,7 @@ Most LLMs guess Delphi from C# syntax and 20-year-old forum posts. Your ported c
 
 This public repository hosts the **FREE Evaluation DEMO (`< 1 MB`)** — with the **exact same 4-layer architecture** and working plugins/skills/MCP as the full commercial edition.
 
-1. Download **[`delphi-behavior-contracts-demo-1.0.0.zip`](https://github.com/DIIIUA/delphi-behavior-contracts/releases/latest)** (or clone this repo).
+1. Download **[`delphi-behavior-contracts-demo-1.0.1.zip`](https://github.com/DIIIUA/delphi-behavior-contracts/releases/latest)** (or clone this repo).
 2. Point Claude Code, Codex, Antigravity, Gemini CLI, Cursor, Copilot, or Windsurf to **[`EVALUATE_FOR_USER.md`](EVALUATE_FOR_USER.md)** (Russian: **[`EVALUATE_FOR_USER.ru.md`](EVALUATE_FOR_USER.ru.md)**).
 3. Ask: *"Inspect this Delphi Behavior Contracts DEMO (full 74-chapter index, 4 difficulty tiers, compiler receipts, local MCP) and tell me honestly: is the full edition what we need?"*
 

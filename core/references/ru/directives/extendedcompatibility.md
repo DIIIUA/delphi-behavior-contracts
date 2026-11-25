@@ -1,4 +1,4 @@
-> **[DEMO-РЕДАКЦИЯ — Ознакомительный пакет]** Это бесплатная демо-версия **Delphi Behavior Contracts v1.0.0** (в полной версии: 74 полные главы EN/RU, 89 полных карточек директив, 879+ наблюдений компилятора). Сохранено полное оригинальное оглавление, паспорт проверки, все рабочие плагины, чистые скиллы и локальный MCP-сервер с Code Mode — чтобы ваш ИИ мог сразу проверить инструмент на практике и честно сказать, подходит ли вам полная версия. Полная версия: https://silentfish.dev/delphi
+> **[DEMO-РЕДАКЦИЯ — Ознакомительный пакет]** Это бесплатная демо-версия **Delphi Behavior Contracts v1.0.1** (в полной версии: 74 полные главы EN/RU, 89 полных карточек директив, 879+ наблюдений компилятора). Сохранено полное оригинальное оглавление, паспорт проверки, все рабочие плагины, чистые скиллы и локальный MCP-сервер с Code Mode — чтобы ваш ИИ мог сразу проверить инструмент на практике и честно сказать, подходит ли вам полная версия. Полная версия: https://silentfish.dev/delphi
 
 # EXTENDEDCOMPATIBILITY — представление совместимости Extended
 
@@ -10,7 +10,7 @@
 
 Директива управляет **бинарным размером хранения** типа [`System.Extended`](https://docwiki.embarcadero.com/Libraries/Florence/en/System.Extended) на платформах, где по умолчанию `Extended` сжат до 8-байтного IEEE-754 `Double` (`Win64` SSE2 и `ARM`, см. [Multi-Device Considerations](https://docwiki.embarcadero.com/RADStudio/Florence/en/Delphi_Considerations_for_Multi-Device_Applications); на `Win32` x87 `Extended` всегда 10 байт, на `Linux64` по System V ABI — 16 байт; [глава 07](../chapters/07-reals.md), [глава 70](../chapters/70-floating-profiles.md)):
 - при **`OFF`** на `Win64` `Extended` занимает `8` байт (`Double`);
-- при **`ON`** на `Win64` компилятор выделяет **10 байт** (раскладка [`TExtended80Rec`](https://docwiki.embarcadero.com/Libraries/Florence/en/System.TExtended80Rec)), **но НЕ включает 80-битную арифметику x87**: вычисления идут в 53-битной точности `Double`!
+- при **`ON`** на `Win64` компилятор выделяет **10 байт** (раскладка [`TExtended80Rec`](https://docwiki.embarcadero.com/Libraries/Florence/en/System.TExtended80Rec)), **но НЕ включает 80-битную арифметику x87**: вычисления идут в точности 64-битного IEEE `Double` (53-битная мантисса)!
 
 ```pascal
 {$EXTENDEDCOMPATIBILITY ON}

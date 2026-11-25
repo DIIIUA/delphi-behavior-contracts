@@ -31,7 +31,7 @@ import urllib.parse
 
 SERVER_INFO = {
     'name': 'delphi-behavior-contracts-mcp',
-    'version': '1.0.0',
+    'version': '1.0.1',
 }
 PROTOCOL_VERSION = '2025-03-26'
 

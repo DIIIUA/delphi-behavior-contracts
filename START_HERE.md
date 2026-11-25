@@ -1,4 +1,4 @@
-# Delphi Behavior Contracts — FREE DEMO Suite (v1.0.0-demo)
+# Delphi Behavior Contracts — FREE DEMO Suite (v1.0.1-demo)
 
 > **Want your AI to evaluate whether the full edition is right for you?**
 > Point your AI to [EVALUATE_FOR_USER.md](EVALUATE_FOR_USER.md) (or [EVALUATE_FOR_USER.ru.md](EVALUATE_FOR_USER.ru.md)) and ask:

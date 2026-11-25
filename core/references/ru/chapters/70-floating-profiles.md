@@ -1,6 +1,6 @@
 # 70. Числовой профиль: тип, вычисление, хранение и исключение
 
-> **[DEMO-РЕДАКЦИЯ — Ознакомительный пакет]** Это бесплатная демо-версия **Delphi Behavior Contracts v1.0.0** (в полной версии: 74 полные главы EN/RU, 89 полных карточек директив, 879+ наблюдений компилятора). Сохранено полное оригинальное оглавление, паспорт проверки, все рабочие плагины, чистые скиллы и локальный MCP-сервер с Code Mode — чтобы ваш ИИ мог сразу проверить инструмент на практике и честно сказать, подходит ли вам полная версия. Полная версия: https://silentfish.dev/delphi
+> **[DEMO-РЕДАКЦИЯ — Ознакомительный пакет]** Это бесплатная демо-версия **Delphi Behavior Contracts v1.0.1** (в полной версии: 74 полные главы EN/RU, 89 полных карточек директив, 879+ наблюдений компилятора). Сохранено полное оригинальное оглавление, паспорт проверки, все рабочие плагины, чистые скиллы и локальный MCP-сервер с Code Mode — чтобы ваш ИИ мог сразу проверить инструмент на практике и честно сказать, подходит ли вам полная версия. Полная версия: https://silentfish.dev/delphi
 
 **Demo Sample Tier:** Уровень 4 — Хардкор / ABI компилятора (Асимметрия Extended на Win32 vs Win64)
 
@@ -15,12 +15,13 @@
 | Intel Win64 (x64, при `{$EXTENDEDCOMPATIBILITY OFF}`) | **8 байт** | Псевдоним IEEE `Double` (`binary64`, 53 бита значимой мантиссы на регистрах SSE2 `XMM`) |
 | Intel Linux64 / Intel macOS64 | **16 байт** | 80-битное значение x87 с 6 байтами выравнивания по ABI System V (**не** IEEE `binary128`!) |
 | ARM (Android, iOS, macOS ARM64) | **8 байт** | Псевдоним IEEE `Double` (включая Apple Silicon ARM64; не путать со старым примером macOS Intel без указания CPU) |
+| Windows ARM64 / Win64 ARM64EC | **Не измерено (`OPEN`)** | Ожидается 8-байтный профиль IEEE `Double`, но живой квитанцией компилятора в этом наборе ещё не подтверждено (зафиксировано в [`EXTENDED_TARGET_PROFILE`](../SOURCE_ISSUES.md#issue-extended-target-profile)) |
 
 ## 2. Совместимость хранения (`{$EXTENDEDCOMPATIBILITY}`, `TExtended80Rec`) и [`EXTENDED_TARGET_PROFILE`](../SOURCE_ISSUES.md#issue-extended-target-profile)
 
 При переносе бинарных файлов и записей между Win32 и 64-битными таргетами необходимо строго разделять **размер буфера хранения** и **разрядность самой арифметики**:
 
-- **`{$EXTENDEDCOMPATIBILITY ON|OFF}` ([карточка EXTENDEDCOMPATIBILITY](../directives/extendedcompatibility.md), default `OFF`):** локальная директива на странице [Extended type compatibility](https://docwiki.embarcadero.com/RADStudio/Florence/en/Extended_type_compatibility_(Delphi)) переключает `Extended` в 10-байтовый формат хранения ради двоичной совместимости структур. Однако на Win64 это **не включает 80-битную арифметику x87**: вычисления выполняются в 53-битной мантиссе `Double` на SSE2!
+- **`{$EXTENDEDCOMPATIBILITY ON|OFF}` ([карточка EXTENDEDCOMPATIBILITY](../directives/extendedcompatibility.md), default `OFF`):** локальная директива на странице [Extended type compatibility](https://docwiki.embarcadero.com/RADStudio/Florence/en/Extended_type_compatibility_(Delphi)) переключает `Extended` в 10-байтовый формат хранения ради двоичной совместимости структур. Однако на Win64 это **не включает 80-битную арифметику x87**: вычисления выполняются в 64-битном IEEE `Double` (53-битная мантисса) на SSE2!
 - **`System.TExtended80Rec` ([TExtended80Rec](https://docwiki.embarcadero.com/Libraries/Florence/en/System.TExtended80Rec)):** упакованная 10-байтовая запись (`Words`, `Bytes`, `Frac`, `Exp`, `Sign`), явно отделяющая сериализацию 80-битных потоков данных от арифметического типа текущей платформы.
 
 ### Решающие измерения серии P13 (`P13_ExtCompat_Prec_On32/64` и `P13_ExtPrecision_Off32/64`, `OPEN` для не-Windows)
@@ -33,7 +34,7 @@
 | **Win64** `OFF` (`P13_ExtPrecision_Off64`) | `8` / `10` | `24; offE=8; offB=16` | `10; offE=1; offB=9` | **`FALSE`** (SSE2 `Double`) | `TRUE` (`984CFB073CDD5E40` — уже 8-байтный `Double`) |
 | **Win64** **`{$EXTENDEDCOMPATIBILITY ON}`** (`P13_ExtCompat_Prec_On64`) | **`10` / `10`** | **`24; offE=8; offB=18`** | **`12; offE=1; offB=11`** | **`FALSE`** (арифметика всё ещё `Double`!) | **`FALSE`!** (10 байт `0AC264DA3FE0E9F60540` усекаются через `Double`!) |
 
-**Ключевой физический вывод:** на `Win64` директива `{$EXTENDEDCOMPATIBILITY ON}` точно восстанавливает 10-байтовые размеры и смещения полей записей Win32 (`24 / 8 / 18` и `12 / 1 / 11`), **но любое чтение или присваивание такого 10-байтового `Extended` проходит транзитом через 53-битный `Double`**, обнуляя младшие 11 бит мантиссы (`prec64=FALSE`, `rt_eq=FALSE`)! Чтобы не повредить чужие 80-битные данные на Win64 при пересылке, их копируют как сырой `TExtended80Rec`, не приводя к `Extended`. Поведение Linux64, macOS64 и ARM остаётся `OPEN` в [`EXTENDED_TARGET_PROFILE`](../SOURCE_ISSUES.md#issue-extended-target-profile).
+**Ключевой физический вывод:** на `Win64` директива `{$EXTENDEDCOMPATIBILITY ON}` точно восстанавливает 10-байтовые размеры и смещения полей записей Win32 (`24 / 8 / 18` и `12 / 1 / 11`), **но любое чтение или присваивание такого 10-байтового `Extended` проходит транзитом через 64-битный IEEE `Double` (53-битная мантисса)**, обнуляя младшие 11 бит мантиссы (`prec64=FALSE`, `rt_eq=FALSE`)! Чтобы не повредить чужие 80-битные данные на Win64 при пересылке, их копируют как сырой `TExtended80Rec`, не приводя к `Extended`. Поведение Linux64, macOS64 и ARM остаётся `OPEN` в [`EXTENDED_TARGET_PROFILE`](../SOURCE_ISSUES.md#issue-extended-target-profile).
 
 ## 3. Промежуточная точность и исторические форматы (`{$EXCESSPRECISION}`, `{$REALCOMPATIBILITY}`, `{$SAFEDIVIDE}`)
 
@@ -62,6 +63,7 @@ function SetExceptionMask(const Mask: TArithmeticExceptionMask): TArithmeticExce
 
 - **Точность типа маски:** каноническая сигнатура `SetExceptionMask` использует тип **`TArithmeticExceptionMask`** (`set of TArithmeticExceptions`, 1 байт). Историческое имя `TFPUExceptionMask` относится к x87-специфичным функциям: в пробе `P2_MathMask_Alias32/64` подтверждено, что они имеют разные `TypeInfo` (`same_typeinfo=FALSE`), поэтому в переносимом коде следует объявлять `TArithmeticExceptionMask`.
 - **Перелом умолчания в Delphi 12 Athens:** в классических версиях Delphi (вплоть до 11 Alexandria) критические исключения (`exInvalidOp`, `exZeroDivide`, `exOverflow`) по умолчанию были размаскированы и бросали исключения языка. Начиная с **Delphi 12 Athens**, страница `SetExceptionMask` фиксирует новый default: **все 6 масок FP-исключений включены (`ON`)**. При локальном изменении маски предыдущее значение обязательно возвращают в `try ... finally`.
+- **Граница контекста FPU/SSE между потоками, DLL и вызовами ОС (`Set8087CW` / `SetMXCSR`, `DOCUMENTED`):** аппаратные управляющие регистры (**x87 FPU Control Word** через `Get8087CW`/`Set8087CW` и **SSE2 MXCSR** через `GetMXCSR`/`SetMXCSR`) являются **потоковым (per-thread) состоянием CPU**. Новые потоки, сторонние C/C++ DLL (DirectX, OpenGL, драйверы принтеров и графики, COM/OLE-серверы, внешние математические библиотеки) и системные вызовы способны изменить маски исключений, режим округления или точность x87 и не восстановить их при возврате. Не полагайтесь на стартовую маску Delphi RTL после вызовов внешнего кода или в другом потоке — сохраняйте и восстанавливайте `SetExceptionMask` (либо управляющее слово платформы) в `try ... finally` в том же потоке.
 
 ### Открытый вопрос [`FINITEFLOAT_UNDERSPECIFIED`](../SOURCE_ISSUES.md#issue-finitefloat-underspecified) (`OPEN`)
 
@@ -101,7 +103,7 @@ var
 
 ### [ГРАНИЦА DEMO-ФРАГМЕНТА — Уровень 4 — Хардкор / ABI компилятора (Асимметрия Extended на Win32 vs Win64)]
 
-Выше показаны первые ~90 строк из **143 строк** полной главы.
+Выше показаны первые ~90 строк из **145 строк** полной главы.
 
 **Полное оглавление разделов в полной версии:**
 - `## 1. Почему одного имени `Extended` недостаточно`

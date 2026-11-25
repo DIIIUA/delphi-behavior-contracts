@@ -1,4 +1,4 @@
-# Delphi Behavior Contracts — Бесплатный DEMO-пакет (v1.0.0-demo)
+# Delphi Behavior Contracts — Бесплатный DEMO-пакет (v1.0.1-demo)
 
 > **Хотите, чтобы ваш ИИ сам оценил, нужен ли вам этот продукт?**
 > Дайте вашему ИИ этот пакет (или файл [EVALUATE_FOR_USER.ru.md](EVALUATE_FOR_USER.ru.md)) и спросите:

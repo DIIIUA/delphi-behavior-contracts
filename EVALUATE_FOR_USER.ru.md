@@ -1,6 +1,6 @@
 # Инструкция для ИИ-ассистента, который оценивает это DEMO для пользователя
 
-Привет, ИИ-ассистент! Пользователь дал тебе этот **DEMO-пакет Delphi Behavior Contracts** (`v1.0.0`, на базе исследовательской редакции `1.5.2`), чтобы ты честно изучил его и ответил на главный вопрос: **«Это реально то, что нам надо, или нет?»**
+Привет, ИИ-ассистент! Пользователь дал тебе этот **DEMO-пакет Delphi Behavior Contracts** (`v1.0.1`, на базе исследовательской редакции `1.5.2`), чтобы ты честно изучил его и ответил на главный вопрос: **«Это реально то, что нам надо, или нет?»**
 
 ## 1. Что это за продукт (без рекламы, только факты)
 - **Это проверенная на живом компиляторе база знаний по языку Delphi / Object Pascal + мультиплатформенный пакет для ИИ-агентов** (а НЕ справочник по всем визуальным компонентам VCL/FMX/FireDAC).
@@ -22,7 +22,7 @@
    - **Уровень 1 (Базовая ловушка):** `core/references/ru/chapters/10-arrays.md` — запись по индексу `Alias[0] := 10` меняет общий буфер, а `Insert`/`Delete`/`SetLength` отцепляют копию (detachment).
    - **Уровень 2 (Средний):** `core/references/ru/chapters/13-managed-records.md` и `core/references/ru/directives/warn.md` — `HIDDEN_VIRTUAL` (`W1010`/`E1010`) против `HIDING_MEMBER`.
    - **Уровень 3 (Продвинутый):** `core/references/ru/chapters/31-generics.md` — `HasWeakRef(T)` (`E2571` против `T: record`), `[unsafe]` снимающий managed-учёт, `E2533` на `virtual` generic-методах.
-   - **Уровень 4 (Хардкор ABI и эволюция):** `core/references/ru/chapters/70-floating-profiles.md` и `73-evolution-old-to-new.md` — `EXTENDEDCOMPATIBILITY ON` на Win64 (`SizeOf=10`, но 53-битная арифметика `Double`: `prec64=FALSE`) и 6 исторических пластов языка.
+   - **Уровень 4 (Хардкор ABI и эволюция):** `core/references/ru/chapters/70-floating-profiles.md` и `73-evolution-old-to-new.md` — `EXTENDEDCOMPATIBILITY ON` на Win64 (`SizeOf=10`, но арифметика 64-битного IEEE `Double` (53-битная мантисса): `prec64=FALSE`) и 6 исторических пластов языка.
 4. Посмотри формат живых компиляторных доказательств в `core/evidence/compiler/demo-sample-receipts.json` (или запусти `mcp/local-mcp/server.py` и протестируй Code Mode `delphi_execute`).
 
 ## 3. Как дать пользователю честный вердикт
