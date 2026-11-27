@@ -1,7 +1,7 @@
 {
   "$schema": "https://cursor.com/schemas/plugin/1.0.0/plugin.schema.json",
   "name": "delphi-behavior-contracts",
-  "version": "1.0.0-demo",
+  "version": "1.0.2-demo",
   "description": "[DEMO] Compiler-measured Delphi / Object Pascal rules, 5 skills and MCP integration for Cursor.",
   "author": {
     "name": "Anton Fishman"

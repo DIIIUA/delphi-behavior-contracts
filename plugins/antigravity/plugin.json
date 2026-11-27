@@ -1,7 +1,7 @@
 {
   "name": "delphi-behavior-contracts",
   "displayName": "Delphi Behavior Contracts (DEMO)",
-  "version": "1.0.0-demo",
+  "version": "1.0.2-demo",
   "description": "[DEMO] Compiler-measured Delphi / Object Pascal language reference (74 chapters, 89 directive cards, EN & RU), 5 specialist skills, and Code Mode MCP server.",
   "author": {
     "name": "Anton Fishman",

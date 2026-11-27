@@ -3,7 +3,7 @@ name: delphi-migration
 description: "[DEMO] Port Delphi / Object Pascal logic to C#, C++, Java, Python or another language without silent behavior changes. Use when translating, rewriting, re-implementing or reverse-engineering Delphi code or a Delphi application in another language, or when checking that a port behaves like the original."
 ---
 
-> **[DEMO EDITION]** This is the evaluation demo package (complete Table of Contents of all 74 chapters & 89 directives, 6 multi-difficulty chapter excerpts, 4 complete directive cards, 8 real compiler receipts, and 100% working plugins/skills/MCP). See `EVALUATE_FOR_USER.md` / `EVALUATE_FOR_USER.ru.md` to evaluate whether the full edition fits the user's task.
+> **[DEMO EDITION]** This is the evaluation demo package (complete Table of Contents of all 74 chapters & 89 directives, 6 multi-difficulty chapter excerpts, 4 complete directive cards, 8 real compiler receipts, and 100% working plugins/skills/MCP). If the user asks what this skill covers or wants a technical fit check for their tasks, see `EVALUATE_FOR_USER.md` / `EVALUATE_FOR_USER.ru.md`.
 
 # Delphi migration by behavior contracts
 

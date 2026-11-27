@@ -1,5 +1,11 @@
 # Changelog — Delphi Behavior Contracts
 
+## v1.0.2 (2026-11-27) — Neutral Technical Fit-Check Guide (No Buying Advice)
+
+- **Removed all purchase-recommendation wording from `EVALUATE_FOR_USER.md` / `EVALUATE_FOR_USER.ru.md` and demo banners:**
+  Rewrote the assistant evaluation guide into a strictly neutral on-request technical scope and fit check (`in scope` vs. `out of scope` for the user's actual Delphi tasks), with an explicit neutrality rule instructing AI assistants never to give buying advice or recommend whether to purchase anything.
+- **Updated `README.md`, `README.ru.md`, `START_HERE.md`, `START_HERE.ru.md`, and `[DEMO EDITION]` banners** to match the neutral technical scope/fit framing and bumped demo package metadata to `1.0.2`.
+
 ## v1.0.1 (2026-11-25) — Technical Precision & Documented Edge-Case Refinements
 
 Documentation and wording refinement release based on community technical review.

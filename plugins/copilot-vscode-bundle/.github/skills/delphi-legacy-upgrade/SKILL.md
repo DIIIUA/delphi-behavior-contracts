@@ -3,7 +3,7 @@ name: delphi-legacy-upgrade
 description: "[DEMO] Upgrade old Delphi code (Delphi 7, 2007, XE-era, 32-bit, ANSI strings, ARC mobile code) to Delphi 12/13, Win64 and Unicode while preserving behavior. Use when modernizing, recompiling or fixing legacy Delphi projects, old directives, old object/Real48 types or pointer-size assumptions."
 ---
 
-> **[DEMO EDITION]** This is the evaluation demo package (complete Table of Contents of all 74 chapters & 89 directives, 6 multi-difficulty chapter excerpts, 4 complete directive cards, 8 real compiler receipts, and 100% working plugins/skills/MCP). See `EVALUATE_FOR_USER.md` / `EVALUATE_FOR_USER.ru.md` to evaluate whether the full edition fits the user's task.
+> **[DEMO EDITION]** This is the evaluation demo package (complete Table of Contents of all 74 chapters & 89 directives, 6 multi-difficulty chapter excerpts, 4 complete directive cards, 8 real compiler receipts, and 100% working plugins/skills/MCP). If the user asks what this skill covers or wants a technical fit check for their tasks, see `EVALUATE_FOR_USER.md` / `EVALUATE_FOR_USER.ru.md`.
 
 # Upgrading legacy Delphi
 

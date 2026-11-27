@@ -26,9 +26,9 @@
 
 В этом репозитории выложена **бесплатная ознакомительная DEMO-версия (`< 1 МБ`)** с точно такой же 4-слойной архитектурой и на 100% рабочими плагинами, скиллами и MCP-сервером:
 
-1. Скачай **[`delphi-behavior-contracts-demo-1.0.1.zip`](https://github.com/DIIIUA/delphi-behavior-contracts/releases/latest)** (или клонируй этот репозиторий).
+1. Скачай **[`delphi-behavior-contracts-demo-1.0.2.zip`](https://github.com/DIIIUA/delphi-behavior-contracts/releases/latest)** (или клонируй этот репозиторий).
 2. Укажи Claude Code, Codex, Antigravity, Gemini CLI, Cursor, Copilot или Windsurf на файл **[`EVALUATE_FOR_USER.ru.md`](EVALUATE_FOR_USER.ru.md)**.
-3. Спроси: *«Проверь это демо Delphi Behavior Contracts (полное оглавление всех 74 глав, 4 уровня сложности, квитанции компилятора, локальный MCP) и честно скажи: нужен ли нам полный пакет?»*
+3. Спроси: *«Что покрывает этот скилл Delphi Behavior Contracts и полезен ли он для наших текущих задач по Delphi?»*
 
 ## Полная коммерческая версия (Разовая покупка · Без подписок)
 

@@ -1,6 +1,6 @@
 # CODEPAGE — a confirmed DCC setting and an unconfirmed source form
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.2** (full corpus: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you can inspect coverage and test the offline workflow on your own Delphi tasks. Project page: https://silentfish.dev/delphi
 
 **Syntax:** Embarcadero documents the compiler command-line switch **`--codepage=nnn`** (for example, `65001` for UTF-8) and the *Code page* field in IDE project settings (*Project Options -> Delphi Compiler -> Compiling*). A source-code form such as `{$CODEPAGE ...}` is **not confirmed** in Embarcadero Delphi and was rejected in live testing.
 

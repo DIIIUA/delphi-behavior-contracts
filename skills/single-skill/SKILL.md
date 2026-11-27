@@ -3,7 +3,7 @@ name: delphi-behavior-contracts
 description: "[DEMO] Read, write, review, debug and migrate Delphi / Object Pascal code by its actual behavior, not by similar-looking names. Use for any Delphi work, especially porting Delphi logic to C#, C++, Java or another language, upgrading old Delphi code, or explaining copying, aliasing, ownership, dispatch, exceptions, numeric rounding, strings, directives and version differences. Backed by a 74-chapter reference with compiler-measured observations on Delphi 13."
 ---
 
-> **[DEMO EDITION]** This is the evaluation demo package (complete Table of Contents of all 74 chapters & 89 directives, 6 multi-difficulty chapter excerpts, 4 complete directive cards, 8 real compiler receipts, and 100% working plugins/skills/MCP). See `EVALUATE_FOR_USER.md` / `EVALUATE_FOR_USER.ru.md` to evaluate whether the full edition fits the user's task.
+> **[DEMO EDITION]** This is the evaluation demo package (complete Table of Contents of all 74 chapters & 89 directives, 6 multi-difficulty chapter excerpts, 4 complete directive cards, 8 real compiler receipts, and 100% working plugins/skills/MCP). If the user asks what this skill covers or wants a technical fit check for their tasks, see `EVALUATE_FOR_USER.md` / `EVALUATE_FOR_USER.ru.md`.
 
 # Delphi Behavior Contracts
 

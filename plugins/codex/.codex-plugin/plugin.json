@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "delphi-behavior-contracts",
-  "version": "1.0.0-demo",
+  "version": "1.0.2-demo",
   "description": "[DEMO] Delphi / Object Pascal by actual behavior: 5 specialist skills, compiler-measured EN/RU reference (74 chapters, 89 directives, 879+ receipts) and Code Mode MCP server.",
   "author": {
     "name": "Anton Fishman",

@@ -1,6 +1,6 @@
 # Compiler verification: final edition 1.0.0 (series P11–P14 and P1–P14 summary)
 
-> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.1** (full edition: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you (and your AI) can test the real workflow and evaluate whether the full edition fits your Delphi task. Full version: https://silentfish.dev/delphi
+> **[DEMO EDITION — Evaluation Sample]** This package is the free evaluation demo of **Delphi Behavior Contracts v1.0.2** (full corpus: 74 complete EN/RU chapters, 89 full directive cards, 879+ compiler observations). The complete original Table of Contents, verification record, working plugins, pure skills, and local/self-hosted MCP Code Mode server are included so you can inspect coverage and test the offline workflow on your own Delphi tasks. Project page: https://silentfish.dev/delphi
 
 
 **Historical report.** The current verification level and corrections are described in [pass 1.2.0](COMPILER_PASS_120.md). The old aggregate figures are not a new independent run. Specific source files from the portable selection were rerun together with their dependencies; discrepancies found are preserved.

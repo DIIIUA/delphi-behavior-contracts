@@ -1,6 +1,6 @@
 {
   "name": "delphi-behavior-contracts",
-  "version": "1.0.0-demo",
+  "version": "1.0.2-demo",
   "description": "[DEMO] Compiler-measured Delphi / Object Pascal reference, 5 specialist skills, slash commands and MCP server.",
   "contextFileName": "GEMINI.md",
   "settings": [

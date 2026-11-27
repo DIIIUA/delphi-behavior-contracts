@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Universal installer and standalone-zip exporter for Delphi Behavior Contracts Suite (v1.0.1).
+"""Universal installer and standalone-zip exporter for Delphi Behavior Contracts Suite (v1.0.2).
 
 Explicitly distinguishes PLUGINS (`--plugin` / `--export-plugin`) from pure SKILLS (`--skill` / `--export-skill`)!
 Zero external dependencies (Python 3.8+ standard library only).

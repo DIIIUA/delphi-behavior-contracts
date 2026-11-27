@@ -3,7 +3,7 @@ name: delphi-behavior-contracts
 description: "[DEMO] Core skill for any Delphi / Object Pascal work - explaining, writing or changing Delphi code by its actual, version-specific behavior. Use when Delphi, Object Pascal, .pas/.dpr/.dpk/.dfm files or RAD Studio code appear and no narrower Delphi skill fits. Covers language semantics, versions and compiler-measured evidence on Delphi 13."
 ---
 
-> **[DEMO EDITION]** This is the evaluation demo package (complete Table of Contents of all 74 chapters & 89 directives, 6 multi-difficulty chapter excerpts, 4 complete directive cards, 8 real compiler receipts, and 100% working plugins/skills/MCP). See `EVALUATE_FOR_USER.md` / `EVALUATE_FOR_USER.ru.md` to evaluate whether the full edition fits the user's task.
+> **[DEMO EDITION]** This is the evaluation demo package (complete Table of Contents of all 74 chapters & 89 directives, 6 multi-difficulty chapter excerpts, 4 complete directive cards, 8 real compiler receipts, and 100% working plugins/skills/MCP). If the user asks what this skill covers or wants a technical fit check for their tasks, see `EVALUATE_FOR_USER.md` / `EVALUATE_FOR_USER.ru.md`.
 
 # Delphi Behavior Contracts
 

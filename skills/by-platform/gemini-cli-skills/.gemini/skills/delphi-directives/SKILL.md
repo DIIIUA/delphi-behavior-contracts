@@ -3,7 +3,7 @@ name: delphi-directives
 description: "[DEMO] Explain and set Delphi compiler directives, conditional compilation and build profiles - {$IFDEF}, {$IF}, {$IFOPT}, PUSHOPT/POPOPT, ALIGN, RTTI, WARN, RANGECHECKS, OVERFLOWCHECKS, ZEROBASEDSTRINGS, INLINE and others. Use for questions about switches, defines, .dproj options, DCC command-line options, linker effects or why the same source compiles differently."
 ---
 
-> **[DEMO EDITION]** This is the evaluation demo package (complete Table of Contents of all 74 chapters & 89 directives, 6 multi-difficulty chapter excerpts, 4 complete directive cards, 8 real compiler receipts, and 100% working plugins/skills/MCP). See `EVALUATE_FOR_USER.md` / `EVALUATE_FOR_USER.ru.md` to evaluate whether the full edition fits the user's task.
+> **[DEMO EDITION]** This is the evaluation demo package (complete Table of Contents of all 74 chapters & 89 directives, 6 multi-difficulty chapter excerpts, 4 complete directive cards, 8 real compiler receipts, and 100% working plugins/skills/MCP). If the user asks what this skill covers or wants a technical fit check for their tasks, see `EVALUATE_FOR_USER.md` / `EVALUATE_FOR_USER.ru.md`.
 
 # Delphi directives and build profiles
 
